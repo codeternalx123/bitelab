@@ -1,0 +1,2415 @@
+[
+  {
+    "disease_id": "congenital_iodine_deficiency_syndrome",
+    "name": "Congenital Iodine Deficiency Syndrome",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E00"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "iodine_deficiency_related_thyroid_disorders",
+    "name": "Iodine Deficiency Related Thyroid Disorders",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E01"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "subclinical_iodine_deficiency_hypothyroidism",
+    "name": "Subclinical Iodine Deficiency Hypothyroidism",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E02"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_hypothyroidism",
+    "name": "Other Hypothyroidism",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E03"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_nontoxic_goiter",
+    "name": "Other Nontoxic Goiter",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E04"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "thyrotoxicosis_(hyperthyroidism)",
+    "name": "Thyrotoxicosis (Hyperthyroidism)",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E05"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "thyroiditis",
+    "name": "Thyroiditis",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E06"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_disorders_of_thyroid",
+    "name": "Other Disorders of Thyroid",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E07"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "type_1_diabetes_mellitus",
+    "name": "Type 1 Diabetes Mellitus",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E10"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "carbohydrates",
+        "target_min": 40,
+        "target_max": 55,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Blood sugar control"
+      },
+      {
+        "nutrient": "sugar",
+        "target_min": null,
+        "target_max": 25,
+        "unit": "g",
+        "priority": "critical",
+        "reason": "Prevent glucose spikes"
+      },
+      {
+        "nutrient": "fiber",
+        "target_min": 25,
+        "target_max": 35,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Improve insulin sensitivity"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "sugary drinks",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Rapid blood sugar spike",
+        "alternative": "water or unsweetened beverages"
+      },
+      {
+        "food_item": "white bread",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High glycemic index",
+        "alternative": "whole grain bread"
+      }
+    ],
+    "recommended_foods": [
+      "fatty fish",
+      "quinoa",
+      "berries",
+      "avocado",
+      "nuts",
+      "legumes",
+      "oatmeal",
+      "leafy greens"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": true,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Monitor blood glucose regularly",
+      "Coordinate meals with medication",
+      "Consistent carb intake per meal"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "type_2_diabetes_mellitus",
+    "name": "Type 2 Diabetes Mellitus",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E11"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "carbohydrates",
+        "target_min": 40,
+        "target_max": 55,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Blood sugar control"
+      },
+      {
+        "nutrient": "sugar",
+        "target_min": null,
+        "target_max": 25,
+        "unit": "g",
+        "priority": "critical",
+        "reason": "Prevent glucose spikes"
+      },
+      {
+        "nutrient": "fiber",
+        "target_min": 25,
+        "target_max": 35,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Improve insulin sensitivity"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "sugary drinks",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Rapid blood sugar spike",
+        "alternative": "water or unsweetened beverages"
+      },
+      {
+        "food_item": "white bread",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High glycemic index",
+        "alternative": "whole grain bread"
+      }
+    ],
+    "recommended_foods": [
+      "fatty fish",
+      "quinoa",
+      "berries",
+      "avocado",
+      "nuts",
+      "legumes",
+      "oatmeal",
+      "leafy greens"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": true,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Monitor blood glucose regularly",
+      "Coordinate meals with medication",
+      "Consistent carb intake per meal"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_specified_diabetes_mellitus",
+    "name": "Other Specified Diabetes Mellitus",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E13"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "carbohydrates",
+        "target_min": 40,
+        "target_max": 55,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Blood sugar control"
+      },
+      {
+        "nutrient": "sugar",
+        "target_min": null,
+        "target_max": 25,
+        "unit": "g",
+        "priority": "critical",
+        "reason": "Prevent glucose spikes"
+      },
+      {
+        "nutrient": "fiber",
+        "target_min": 25,
+        "target_max": 35,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Improve insulin sensitivity"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "sugary drinks",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Rapid blood sugar spike",
+        "alternative": "water or unsweetened beverages"
+      },
+      {
+        "food_item": "white bread",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High glycemic index",
+        "alternative": "whole grain bread"
+      }
+    ],
+    "recommended_foods": [
+      "fatty fish",
+      "quinoa",
+      "berries",
+      "avocado",
+      "nuts",
+      "legumes",
+      "oatmeal",
+      "leafy greens"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": true,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Monitor blood glucose regularly",
+      "Coordinate meals with medication",
+      "Consistent carb intake per meal"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "unspecified_diabetes_mellitus",
+    "name": "Unspecified Diabetes Mellitus",
+    "category": "endocrine",
+    "icd10_codes": [
+      "E14"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "carbohydrates",
+        "target_min": 40,
+        "target_max": 55,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Blood sugar control"
+      },
+      {
+        "nutrient": "sugar",
+        "target_min": null,
+        "target_max": 25,
+        "unit": "g",
+        "priority": "critical",
+        "reason": "Prevent glucose spikes"
+      },
+      {
+        "nutrient": "fiber",
+        "target_min": 25,
+        "target_max": 35,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Improve insulin sensitivity"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "sugary drinks",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Rapid blood sugar spike",
+        "alternative": "water or unsweetened beverages"
+      },
+      {
+        "food_item": "white bread",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High glycemic index",
+        "alternative": "whole grain bread"
+      }
+    ],
+    "recommended_foods": [
+      "fatty fish",
+      "quinoa",
+      "berries",
+      "avocado",
+      "nuts",
+      "legumes",
+      "oatmeal",
+      "leafy greens"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": true,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Monitor blood glucose regularly",
+      "Coordinate meals with medication",
+      "Consistent carb intake per meal"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.274238",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "essential_(primary)_hypertension",
+    "name": "Essential (Primary) Hypertension",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I10"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 1500,
+        "unit": "mg",
+        "priority": "critical",
+        "reason": "DASH diet"
+      },
+      {
+        "nutrient": "potassium",
+        "target_min": 3500,
+        "target_max": 4700,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Counteracts sodium"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "hypertensive_heart_disease",
+    "name": "Hypertensive Heart Disease",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I11"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 1500,
+        "unit": "mg",
+        "priority": "critical",
+        "reason": "Blood pressure management"
+      },
+      {
+        "nutrient": "saturated_fat",
+        "target_min": null,
+        "target_max": 7,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Reduce cardiovascular risk"
+      },
+      {
+        "nutrient": "omega3",
+        "target_min": 1,
+        "target_max": 2,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Cardioprotective"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "processed meats",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "High sodium and saturated fat",
+        "alternative": "lean fresh meats"
+      },
+      {
+        "food_item": "trans fats",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Cardiovascular damage",
+        "alternative": "olive oil or avocado"
+      }
+    ],
+    "recommended_foods": [
+      "beans",
+      "vegetables",
+      "fruits",
+      "oats",
+      "walnuts",
+      "salmon",
+      "olive oil"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "angina_pectoris",
+    "name": "Angina Pectoris",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I20"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "acute_myocardial_infarction",
+    "name": "Acute Myocardial Infarction",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I21"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "chronic_ischemic_heart_disease",
+    "name": "Chronic Ischemic Heart Disease",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I25"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 1500,
+        "unit": "mg",
+        "priority": "critical",
+        "reason": "Blood pressure management"
+      },
+      {
+        "nutrient": "saturated_fat",
+        "target_min": null,
+        "target_max": 7,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Reduce cardiovascular risk"
+      },
+      {
+        "nutrient": "omega3",
+        "target_min": 1,
+        "target_max": 2,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Cardioprotective"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "processed meats",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "High sodium and saturated fat",
+        "alternative": "lean fresh meats"
+      },
+      {
+        "food_item": "trans fats",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Cardiovascular damage",
+        "alternative": "olive oil or avocado"
+      }
+    ],
+    "recommended_foods": [
+      "beans",
+      "vegetables",
+      "fruits",
+      "oats",
+      "walnuts",
+      "salmon",
+      "olive oil"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "atrial_fibrillation_and_flutter",
+    "name": "Atrial Fibrillation and Flutter",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I48"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "heart_failure",
+    "name": "Heart Failure",
+    "category": "cardiovascular",
+    "icd10_codes": [
+      "I50"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 1500,
+        "unit": "mg",
+        "priority": "critical",
+        "reason": "Blood pressure management"
+      },
+      {
+        "nutrient": "saturated_fat",
+        "target_min": null,
+        "target_max": 7,
+        "unit": "%",
+        "priority": "high",
+        "reason": "Reduce cardiovascular risk"
+      },
+      {
+        "nutrient": "omega3",
+        "target_min": 1,
+        "target_max": 2,
+        "unit": "g",
+        "priority": "high",
+        "reason": "Cardioprotective"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "processed meats",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "High sodium and saturated fat",
+        "alternative": "lean fresh meats"
+      },
+      {
+        "food_item": "trans fats",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Cardiovascular damage",
+        "alternative": "olive oil or avocado"
+      }
+    ],
+    "recommended_foods": [
+      "beans",
+      "vegetables",
+      "fruits",
+      "oats",
+      "walnuts",
+      "salmon",
+      "olive oil"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "1.5-2 liters/day maximum",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.275234",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "gastric_ulcer",
+    "name": "Gastric Ulcer",
+    "category": "digestive",
+    "icd10_codes": [
+      "K25"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "crohn's_disease",
+    "name": "Crohn's Disease",
+    "category": "digestive",
+    "icd10_codes": [
+      "K50"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "ulcerative_colitis",
+    "name": "Ulcerative Colitis",
+    "category": "digestive",
+    "icd10_codes": [
+      "K51"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "irritable_bowel_syndrome",
+    "name": "Irritable Bowel Syndrome",
+    "category": "digestive",
+    "icd10_codes": [
+      "K58"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "alcoholic_liver_disease",
+    "name": "Alcoholic Liver Disease",
+    "category": "digestive",
+    "icd10_codes": [
+      "K70"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 1.0,
+        "target_max": 1.2,
+        "unit": "g/kg",
+        "priority": "medium",
+        "reason": "Liver regeneration"
+      },
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent ascites"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "fibrosis_and_cirrhosis_of_liver",
+    "name": "Fibrosis and Cirrhosis of Liver",
+    "category": "digestive",
+    "icd10_codes": [
+      "K74"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 1.0,
+        "target_max": 1.2,
+        "unit": "g/kg",
+        "priority": "medium",
+        "reason": "Liver regeneration"
+      },
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent ascites"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_diseases_of_liver",
+    "name": "Other Diseases of Liver",
+    "category": "digestive",
+    "icd10_codes": [
+      "K76"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 1.0,
+        "target_max": 1.2,
+        "unit": "g/kg",
+        "priority": "medium",
+        "reason": "Liver regeneration"
+      },
+      {
+        "nutrient": "sodium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent ascites"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "intestinal_malabsorption_(includes_celiac)",
+    "name": "Intestinal Malabsorption (includes Celiac)",
+    "category": "digestive",
+    "icd10_codes": [
+      "K90"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "wheat",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Contains gluten",
+        "alternative": "rice or quinoa"
+      },
+      {
+        "food_item": "barley",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Contains gluten",
+        "alternative": "gluten-free grains"
+      }
+    ],
+    "recommended_foods": [
+      "lean proteins",
+      "rice",
+      "probiotics",
+      "cooked vegetables",
+      "bananas"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.276231",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "acute_kidney_failure",
+    "name": "Acute Kidney Failure",
+    "category": "renal",
+    "icd10_codes": [
+      "N17"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 0.6,
+        "target_max": 0.8,
+        "unit": "g/kg",
+        "priority": "critical",
+        "reason": "Reduce kidney workload"
+      },
+      {
+        "nutrient": "potassium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent hyperkalemia"
+      },
+      {
+        "nutrient": "phosphorus",
+        "target_min": null,
+        "target_max": 1000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent bone disease"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "bananas",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High potassium",
+        "alternative": "apples or berries"
+      },
+      {
+        "food_item": "dairy products",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High phosphorus",
+        "alternative": "rice milk"
+      }
+    ],
+    "recommended_foods": [
+      "rice",
+      "chicken breast",
+      "egg whites",
+      "cauliflower",
+      "cabbage",
+      "bell peppers"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": false,
+    "hydration_requirements": "Restricted - consult physician",
+    "special_considerations": [
+      "Work with renal dietitian",
+      "Monitor lab values regularly",
+      "Adjust based on stage of disease"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.278225",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "chronic_kidney_disease",
+    "name": "Chronic Kidney Disease",
+    "category": "renal",
+    "icd10_codes": [
+      "N18"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 0.6,
+        "target_max": 0.8,
+        "unit": "g/kg",
+        "priority": "critical",
+        "reason": "Reduce kidney workload"
+      },
+      {
+        "nutrient": "potassium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent hyperkalemia"
+      },
+      {
+        "nutrient": "phosphorus",
+        "target_min": null,
+        "target_max": 1000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent bone disease"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "bananas",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High potassium",
+        "alternative": "apples or berries"
+      },
+      {
+        "food_item": "dairy products",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High phosphorus",
+        "alternative": "rice milk"
+      }
+    ],
+    "recommended_foods": [
+      "rice",
+      "chicken breast",
+      "egg whites",
+      "cauliflower",
+      "cabbage",
+      "bell peppers"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": false,
+    "hydration_requirements": "Restricted - consult physician",
+    "special_considerations": [
+      "Work with renal dietitian",
+      "Monitor lab values regularly",
+      "Adjust based on stage of disease"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.278225",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "kidney_and_ureteral_stones",
+    "name": "Kidney and Ureteral Stones",
+    "category": "renal",
+    "icd10_codes": [
+      "N20"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "protein",
+        "target_min": 0.6,
+        "target_max": 0.8,
+        "unit": "g/kg",
+        "priority": "critical",
+        "reason": "Reduce kidney workload"
+      },
+      {
+        "nutrient": "potassium",
+        "target_min": null,
+        "target_max": 2000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent hyperkalemia"
+      },
+      {
+        "nutrient": "phosphorus",
+        "target_min": null,
+        "target_max": 1000,
+        "unit": "mg",
+        "priority": "high",
+        "reason": "Prevent bone disease"
+      }
+    ],
+    "food_restrictions": [
+      {
+        "food_item": "bananas",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High potassium",
+        "alternative": "apples or berries"
+      },
+      {
+        "food_item": "dairy products",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High phosphorus",
+        "alternative": "rice milk"
+      }
+    ],
+    "recommended_foods": [
+      "rice",
+      "chicken breast",
+      "egg whites",
+      "cauliflower",
+      "cabbage",
+      "bell peppers"
+    ],
+    "meal_timing_important": true,
+    "portion_control_critical": false,
+    "hydration_requirements": "Restricted - consult physician",
+    "special_considerations": [
+      "Work with renal dietitian",
+      "Monitor lab values regularly",
+      "Adjust based on stage of disease"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.278225",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "chronic_obstructive_pulmonary_disease",
+    "name": "Chronic Obstructive Pulmonary Disease",
+    "category": "respiratory",
+    "icd10_codes": [
+      "J44"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "vegetables",
+      "fruits",
+      "fish",
+      "nuts",
+      "whole grains"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.279222",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "asthma",
+    "name": "Asthma",
+    "category": "respiratory",
+    "icd10_codes": [
+      "J45"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "vegetables",
+      "fruits",
+      "fish",
+      "nuts",
+      "whole grains"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.279222",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "interstitial_lung_diseases",
+    "name": "Interstitial Lung Diseases",
+    "category": "respiratory",
+    "icd10_codes": [
+      "J84"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "vegetables",
+      "fruits",
+      "fish",
+      "nuts",
+      "whole grains"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.279222",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "rheumatoid_arthritis_with_rheumatoid_factor",
+    "name": "Rheumatoid Arthritis with Rheumatoid Factor",
+    "category": "musculoskeletal",
+    "icd10_codes": [
+      "M05"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.281217",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_rheumatoid_arthritis",
+    "name": "Other Rheumatoid Arthritis",
+    "category": "musculoskeletal",
+    "icd10_codes": [
+      "M06"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.281217",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "polyosteoarthritis",
+    "name": "Polyosteoarthritis",
+    "category": "musculoskeletal",
+    "icd10_codes": [
+      "M15"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.281217",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "osteoporosis_with_pathological_fracture",
+    "name": "Osteoporosis with Pathological Fracture",
+    "category": "musculoskeletal",
+    "icd10_codes": [
+      "M80"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.281217",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "osteoporosis_without_pathological_fracture",
+    "name": "Osteoporosis without Pathological Fracture",
+    "category": "musculoskeletal",
+    "icd10_codes": [
+      "M81"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.281217",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "iron_deficiency_anemia",
+    "name": "Iron Deficiency Anemia",
+    "category": "hematology",
+    "icd10_codes": [
+      "D50"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.283212",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "vitamin_b12_deficiency_anemia",
+    "name": "Vitamin B12 Deficiency Anemia",
+    "category": "hematology",
+    "icd10_codes": [
+      "D51"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.283212",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "folate_deficiency_anemia",
+    "name": "Folate Deficiency Anemia",
+    "category": "hematology",
+    "icd10_codes": [
+      "D52"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.283212",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "schizophrenia",
+    "name": "Schizophrenia",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F20"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "bipolar_affective_disorder",
+    "name": "Bipolar Affective Disorder",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F31"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "major_depressive_disorder,_single_episode",
+    "name": "Major Depressive Disorder, Single Episode",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F32"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "major_depressive_disorder,_recurrent",
+    "name": "Major Depressive Disorder, Recurrent",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F33"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "phobic_anxiety_disorders",
+    "name": "Phobic Anxiety Disorders",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F40"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "other_anxiety_disorders",
+    "name": "Other Anxiety Disorders",
+    "category": "mental_health",
+    "icd10_codes": [
+      "F41"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.285206",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "parkinson's_disease",
+    "name": "Parkinson's Disease",
+    "category": "neurological",
+    "icd10_codes": [
+      "G20"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.286204",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "alzheimer's_disease",
+    "name": "Alzheimer's Disease",
+    "category": "neurological",
+    "icd10_codes": [
+      "G30"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.286204",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "multiple_sclerosis",
+    "name": "Multiple Sclerosis",
+    "category": "neurological",
+    "icd10_codes": [
+      "G35"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.286204",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "epilepsy",
+    "name": "Epilepsy",
+    "category": "neurological",
+    "icd10_codes": [
+      "G40"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.286204",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  },
+  {
+    "disease_id": "migraine",
+    "name": "Migraine",
+    "category": "neurological",
+    "icd10_codes": [
+      "G43"
+    ],
+    "nutritional_guidelines": [
+      {
+        "nutrient": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "medium",
+        "reason": "Maintain healthy weight"
+      }
+    ],
+    "food_restrictions": [],
+    "recommended_foods": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "lean proteins",
+      "healthy fats"
+    ],
+    "meal_timing_important": false,
+    "portion_control_critical": false,
+    "hydration_requirements": "8-10 glasses/day",
+    "special_considerations": [
+      "Follow medical advice",
+      "Regular monitoring recommended"
+    ],
+    "generated_by": "AI",
+    "generated_at": "2025-11-23T14:41:22.286204",
+    "confidence_score": 0.85,
+    "requires_medical_review": true,
+    "source": "AI_Generated",
+    "validation_status": "pending"
+  }
+]

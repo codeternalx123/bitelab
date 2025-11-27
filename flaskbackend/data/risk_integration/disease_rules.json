@@ -1,0 +1,76 @@
+{
+  "ckd": {
+    "avoid": [
+      "starfruit",
+      "high_sodium",
+      "processed_meats"
+    ],
+    "limit": [
+      "potassium",
+      "phosphorus"
+    ],
+    "beneficial": [
+      "cauliflower",
+      "blueberries",
+      "egg_whites"
+    ],
+    "compounds": {
+      "beneficial": [
+        "bicarbonate"
+      ],
+      "harmful": [
+        "oxalate",
+        "uric_acid"
+      ]
+    }
+  },
+  "diabetes": {
+    "avoid": [
+      "sugary_drinks",
+      "refined_carbs"
+    ],
+    "limit": [
+      "saturated_fats"
+    ],
+    "beneficial": [
+      "leafy_greens",
+      "berries",
+      "fatty_fish"
+    ],
+    "compounds": {
+      "beneficial": [
+        "fiber",
+        "chromium",
+        "magnesium"
+      ],
+      "harmful": [
+        "added_sugars"
+      ]
+    }
+  },
+  "hypertension": {
+    "avoid": [
+      "salty_snacks",
+      "canned_soups"
+    ],
+    "limit": [
+      "sodium",
+      "alcohol"
+    ],
+    "beneficial": [
+      "beets",
+      "garlic",
+      "pomegranate"
+    ],
+    "compounds": {
+      "beneficial": [
+        "nitrates",
+        "potassium",
+        "magnesium"
+      ],
+      "harmful": [
+        "sodium"
+      ]
+    }
+  }
+}

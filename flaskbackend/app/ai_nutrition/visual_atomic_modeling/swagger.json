@@ -1,0 +1,1835 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "HealthyEat AI - Visual-to-Atomic Modeling API",
+    "version": "1.0.0",
+    "description": "\n        Revolutionary Visual-to-Atomic modeling system that extracts atomic composition from food images.\n        \n        **Key Features:**\n        - 99.99% atomic precision using Simulated Annealing\n        - 50,000+ ICP-MS ground truth measurements\n        - Real-time food detection with Google Lens-style AI\n        - Personalized health recommendations\n        - Anonymous social health communities\n        - Professional dietitian consultations (80/20 revenue split)\n        - GitHub-style streaks and 70+ achievement badges\n        \n        **Technology Stack:**\n        - EfficientNet-B7, ResNet-50, YOLO\n        - Simulated Annealing optimization\n        - ICP-MS integration\n        - Knowledge graph reasoning\n        - Real-time scanning (<2s latency)\n        ",
+    "contact": {
+      "name": "HealthyEat AI Support",
+      "email": "support@healthyeat.ai",
+      "url": "https://healthyeat.ai"
+    },
+    "license": {
+      "name": "Proprietary",
+      "url": "https://healthyeat.ai/license"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.healthyeat.ai/v1",
+      "description": "Production server"
+    },
+    {
+      "url": "https://staging-api.healthyeat.ai/v1",
+      "description": "Staging server"
+    },
+    {
+      "url": "http://localhost:5000/v1",
+      "description": "Development server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Scanning",
+      "description": "Real-time food scanning and atomic analysis"
+    },
+    {
+      "name": "Risk Assessment",
+      "description": "Personalized health risk analysis"
+    },
+    {
+      "name": "Social",
+      "description": "Health huddles and community features"
+    },
+    {
+      "name": "Consultations",
+      "description": "Professional dietitian appointments"
+    },
+    {
+      "name": "Gamification",
+      "description": "Streaks, badges, and progress tracking"
+    },
+    {
+      "name": "User",
+      "description": "User management and authentication"
+    }
+  ],
+  "paths": {
+    "/scan/realtime": {
+      "post": {
+        "tags": [
+          "Scanning"
+        ],
+        "summary": "Real-time food detection",
+        "description": "Google Lens-style AI detection before photo capture. Returns detected foods with bounding boxes.",
+        "operationId": "realtimeScan",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "frame"
+                ],
+                "properties": {
+                  "frame": {
+                    "type": "string",
+                    "format": "binary",
+                    "description": "Camera frame image"
+                  },
+                  "user_id": {
+                    "type": "string",
+                    "description": "User ID"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Detection successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RealtimeDetectionResponse"
+                },
+                "example": {
+                  "detections": [
+                    {
+                      "food_name": "Grilled Chicken Breast",
+                      "confidence": 0.95,
+                      "bbox": [
+                        100,
+                        150,
+                        300,
+                        400
+                      ],
+                      "category": "protein"
+                    }
+                  ],
+                  "fps": 45,
+                  "latency_ms": 22
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scan/analyze": {
+      "post": {
+        "tags": [
+          "Scanning"
+        ],
+        "summary": "Complete atomic analysis",
+        "description": "Full Visual-to-Atomic pipeline with risk card generation (Phases 1-6)",
+        "operationId": "analyzeFoodImage",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "image",
+                  "user_id"
+                ],
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "user_id": {
+                    "type": "string"
+                  },
+                  "medical_conditions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "health_goals": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Analysis complete",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomicAnalysisResponse"
+                },
+                "example": {
+                  "food_name": "Grilled Salmon",
+                  "atomic_composition": {
+                    "Fe": 2.5,
+                    "Zn": 1.2,
+                    "Ca": 15.0,
+                    "Na": 450.0,
+                    "Pb": 0.001
+                  },
+                  "risk_card": {
+                    "health_score": 88,
+                    "verdict": "SAFE",
+                    "conditions_analysis": {
+                      "diabetes_type2": {
+                        "verdict": "SAFE",
+                        "concerns": [],
+                        "benefits": [
+                          "High protein",
+                          "Low carbs"
+                        ]
+                      }
+                    }
+                  },
+                  "processing_time_ms": 1850
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/risk/detailed-card": {
+      "post": {
+        "tags": [
+          "Risk Assessment"
+        ],
+        "summary": "Generate detailed risk card",
+        "description": "Create comprehensive risk card with medical condition and health goal analysis",
+        "operationId": "generateDetailedRiskCard",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RiskCardRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Risk card generated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetailedRiskCard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/huddles/browse": {
+      "get": {
+        "tags": [
+          "Social"
+        ],
+        "summary": "Browse health huddles",
+        "description": "Browse all available huddles with filtering",
+        "operationId": "browseHuddles",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filter by category"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Search query"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Huddles retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HuddleListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/huddles/create": {
+      "post": {
+        "tags": [
+          "Social"
+        ],
+        "summary": "Create custom huddle",
+        "description": "Create a new health huddle",
+        "operationId": "createHuddle",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHuddleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Huddle created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HuddleResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/huddles/{huddle_id}/join": {
+      "post": {
+        "tags": [
+          "Social"
+        ],
+        "summary": "Join huddle",
+        "description": "Join a health huddle",
+        "operationId": "joinHuddle",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "huddle_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Joined successfully"
+          }
+        }
+      }
+    },
+    "/huddles/{huddle_id}/share-scan": {
+      "post": {
+        "tags": [
+          "Social"
+        ],
+        "summary": "Share meal scan to huddle",
+        "description": "Auto-generate shareable card from scan and post to huddle",
+        "operationId": "shareScanToHuddle",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "huddle_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShareScanRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Scan shared successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ShareScanResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/huddles/{huddle_id}/feed": {
+      "get": {
+        "tags": [
+          "Social"
+        ],
+        "summary": "Get huddle feed",
+        "description": "Get posts in huddle feed",
+        "operationId": "getHuddleFeed",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "huddle_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Feed retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HuddleFeedResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/professionals/search": {
+      "get": {
+        "tags": [
+          "Consultations"
+        ],
+        "summary": "Search professionals",
+        "description": "Search for verified dietitians and coaches",
+        "operationId": "searchProfessionals",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "specializations",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "min_rating",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "default": 0.0
+            }
+          },
+          {
+            "name": "max_price",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "consultation_type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "text_chat",
+                "voice_call",
+                "video_call"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Professionals found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProfessionalListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/professionals/{professional_id}/availability": {
+      "get": {
+        "tags": [
+          "Consultations"
+        ],
+        "summary": "Get professional availability",
+        "description": "Get available time slots for professional",
+        "operationId": "getProfessionalAvailability",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "professional_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "days_ahead",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 14
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Availability retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvailabilityResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/appointments/book": {
+      "post": {
+        "tags": [
+          "Consultations"
+        ],
+        "summary": "Book appointment",
+        "description": "Book consultation appointment with payment (80/20 split)",
+        "operationId": "bookAppointment",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookAppointmentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Appointment booked",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AppointmentResponse"
+                },
+                "example": {
+                  "appointment_id": "appt_abc123",
+                  "professional_id": "pro_xyz789",
+                  "scheduled_date": "2025-11-30T10:00:00Z",
+                  "consultation_type": "video_call",
+                  "price": 120.0,
+                  "platform_fee": 24.0,
+                  "professional_earnings": 96.0,
+                  "payment_status": "captured",
+                  "status": "confirmed"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/appointments/{appointment_id}/start": {
+      "post": {
+        "tags": [
+          "Consultations"
+        ],
+        "summary": "Start consultation",
+        "description": "Start consultation session",
+        "operationId": "startConsultation",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "appointment_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consultation started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsultationSessionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/appointments/{appointment_id}/complete": {
+      "post": {
+        "tags": [
+          "Consultations"
+        ],
+        "summary": "Complete consultation",
+        "description": "Complete consultation and release payment from escrow",
+        "operationId": "completeConsultation",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "appointment_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompleteConsultationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Consultation completed"
+          }
+        }
+      }
+    },
+    "/progress/dashboard": {
+      "get": {
+        "tags": [
+          "Gamification"
+        ],
+        "summary": "Get user dashboard",
+        "description": "Get complete progress dashboard with streaks, goals, and badges",
+        "operationId": "getUserDashboard",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dashboard retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DashboardResponse"
+                },
+                "example": {
+                  "streaks": [
+                    {
+                      "type": "daily_scanning",
+                      "current": 30,
+                      "longest": 30,
+                      "emoji": "\ud83d\udd25\ud83d\udd25"
+                    }
+                  ],
+                  "goals": [
+                    {
+                      "goal_id": "goal_001",
+                      "name": "Lose 10 lbs",
+                      "progress": 90.0,
+                      "current": 191.0,
+                      "target": 190.0,
+                      "unit": "lbs"
+                    }
+                  ],
+                  "earned_badges": [
+                    {
+                      "badge_id": "streak_30",
+                      "name": "Month Master \ud83d\udd25\ud83d\udd25",
+                      "tier": "silver",
+                      "points": 500
+                    }
+                  ],
+                  "stats": {
+                    "total_badges": 10,
+                    "total_points": 1850,
+                    "longest_streak": 30
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/progress/badges": {
+      "get": {
+        "tags": [
+          "Gamification"
+        ],
+        "summary": "Get all badges",
+        "description": "Get library of all available badges",
+        "operationId": "getAllBadges",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Badges retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadgeLibraryResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/progress/record-scan": {
+      "post": {
+        "tags": [
+          "Gamification"
+        ],
+        "summary": "Record meal scan",
+        "description": "Record meal scan activity for streak/badge tracking",
+        "operationId": "recordMealScan",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordScanRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Activity recorded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActivityRecordResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Register user",
+        "description": "Create new user account",
+        "operationId": "registerUser",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User registered",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Login user",
+        "description": "Authenticate user and get token",
+        "operationId": "loginUser",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/profile": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Get user profile",
+        "description": "Get current user profile",
+        "operationId": "getUserProfile",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Profile retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserProfile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Update user profile",
+        "description": "Update user profile information",
+        "operationId": "updateUserProfile",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Profile updated"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "RealtimeDetectionResponse": {
+        "type": "object",
+        "properties": {
+          "detections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "food_name": {
+                  "type": "string"
+                },
+                "confidence": {
+                  "type": "number"
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "category": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "fps": {
+            "type": "number"
+          },
+          "latency_ms": {
+            "type": "number"
+          }
+        }
+      },
+      "AtomicAnalysisResponse": {
+        "type": "object",
+        "properties": {
+          "food_name": {
+            "type": "string"
+          },
+          "atomic_composition": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "nutrients": {
+            "type": "object",
+            "properties": {
+              "calories": {
+                "type": "number"
+              },
+              "protein": {
+                "type": "number"
+              },
+              "carbohydrates": {
+                "type": "number"
+              },
+              "fat": {
+                "type": "number"
+              },
+              "fiber": {
+                "type": "number"
+              },
+              "sodium": {
+                "type": "number"
+              }
+            }
+          },
+          "risk_card": {
+            "$ref": "#/components/schemas/DetailedRiskCard"
+          },
+          "processing_time_ms": {
+            "type": "number"
+          }
+        }
+      },
+      "RiskCardRequest": {
+        "type": "object",
+        "required": [
+          "user_id",
+          "nutrients",
+          "atomic_composition"
+        ],
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "food_name": {
+            "type": "string"
+          },
+          "nutrients": {
+            "type": "object"
+          },
+          "atomic_composition": {
+            "type": "object"
+          },
+          "medical_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "health_goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "DetailedRiskCard": {
+        "type": "object",
+        "properties": {
+          "health_score": {
+            "type": "number"
+          },
+          "safety_verdict": {
+            "type": "string",
+            "enum": [
+              "SAFE",
+              "MODERATE",
+              "CAUTION",
+              "AVOID"
+            ]
+          },
+          "conditions_analysis": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "verdict": {
+                  "type": "string"
+                },
+                "concerns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "benefits": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "goals_analysis": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "alignment_score": {
+                  "type": "number"
+                },
+                "positives": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "negatives": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "recommendations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "HuddleListResponse": {
+        "type": "object",
+        "properties": {
+          "huddles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HuddleResponse"
+            }
+          },
+          "categories": {
+            "type": "object"
+          },
+          "total_huddles": {
+            "type": "integer"
+          }
+        }
+      },
+      "HuddleResponse": {
+        "type": "object",
+        "properties": {
+          "huddle_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "icon_emoji": {
+            "type": "string"
+          },
+          "member_count": {
+            "type": "integer"
+          },
+          "post_count": {
+            "type": "integer"
+          },
+          "is_official": {
+            "type": "boolean"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "CreateHuddleRequest": {
+        "type": "object",
+        "required": [
+          "name",
+          "description",
+          "category",
+          "tags"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "icon_emoji": {
+            "type": "string"
+          },
+          "is_private": {
+            "type": "boolean"
+          }
+        }
+      },
+      "ShareScanRequest": {
+        "type": "object",
+        "required": [
+          "message",
+          "scan_result"
+        ],
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "scan_result": {
+            "type": "object",
+            "properties": {
+              "food_name": {
+                "type": "string"
+              },
+              "food_image_url": {
+                "type": "string"
+              },
+              "nutrients": {
+                "type": "object"
+              },
+              "risk_card": {
+                "type": "object"
+              },
+              "user_goals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user_conditions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ShareScanResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "post_id": {
+            "type": "string"
+          },
+          "shareable_card": {
+            "type": "object",
+            "properties": {
+              "card_id": {
+                "type": "string"
+              },
+              "food_name": {
+                "type": "string"
+              },
+              "health_score": {
+                "type": "number"
+              },
+              "user_verdict": {
+                "type": "string"
+              },
+              "highlights": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "HuddleFeedResponse": {
+        "type": "object",
+        "properties": {
+          "posts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "post_id": {
+                  "type": "string"
+                },
+                "author_id": {
+                  "type": "string"
+                },
+                "text_content": {
+                  "type": "string"
+                },
+                "shareable_card": {
+                  "type": "object"
+                },
+                "likes_count": {
+                  "type": "integer"
+                },
+                "comments_count": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ProfessionalListResponse": {
+        "type": "object",
+        "properties": {
+          "professionals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "professional_id": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "bio": {
+                  "type": "string"
+                },
+                "specializations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "years_experience": {
+                  "type": "integer"
+                },
+                "average_rating": {
+                  "type": "number"
+                },
+                "review_count": {
+                  "type": "integer"
+                },
+                "price_video_call": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      },
+      "AvailabilityResponse": {
+        "type": "object",
+        "properties": {
+          "slots": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "slot_id": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "start_time": {
+                  "type": "string"
+                },
+                "end_time": {
+                  "type": "string"
+                },
+                "duration_minutes": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      },
+      "BookAppointmentRequest": {
+        "type": "object",
+        "required": [
+          "professional_id",
+          "slot_id",
+          "consultation_type",
+          "payment_method"
+        ],
+        "properties": {
+          "professional_id": {
+            "type": "string"
+          },
+          "slot_id": {
+            "type": "string"
+          },
+          "consultation_type": {
+            "type": "string",
+            "enum": [
+              "text_chat",
+              "voice_call",
+              "video_call"
+            ]
+          },
+          "user_notes": {
+            "type": "string"
+          },
+          "payment_method": {
+            "type": "string"
+          }
+        }
+      },
+      "AppointmentResponse": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string"
+          },
+          "professional_id": {
+            "type": "string"
+          },
+          "scheduled_date": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "end_time": {
+            "type": "string"
+          },
+          "consultation_type": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "platform_fee": {
+            "type": "number"
+          },
+          "professional_earnings": {
+            "type": "number"
+          },
+          "payment_status": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "ConsultationSessionResponse": {
+        "type": "object",
+        "properties": {
+          "session_id": {
+            "type": "string"
+          },
+          "appointment_id": {
+            "type": "string"
+          },
+          "is_active": {
+            "type": "boolean"
+          },
+          "started_at": {
+            "type": "string"
+          }
+        }
+      },
+      "CompleteConsultationRequest": {
+        "type": "object",
+        "required": [
+          "professional_summary"
+        ],
+        "properties": {
+          "professional_summary": {
+            "type": "string"
+          },
+          "recommendations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "DashboardResponse": {
+        "type": "object",
+        "properties": {
+          "streaks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "current": {
+                  "type": "integer"
+                },
+                "longest": {
+                  "type": "integer"
+                },
+                "emoji": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "goals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "goal_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "progress": {
+                  "type": "number"
+                },
+                "current": {
+                  "type": "number"
+                },
+                "target": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "earned_badges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "badge_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "tier": {
+                  "type": "string"
+                },
+                "points": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "next_badges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "badge_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "progress": {
+                  "type": "number"
+                },
+                "current": {
+                  "type": "integer"
+                },
+                "required": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "total_badges": {
+                "type": "integer"
+              },
+              "total_points": {
+                "type": "integer"
+              },
+              "longest_streak": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      },
+      "BadgeLibraryResponse": {
+        "type": "object",
+        "properties": {
+          "badges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "badge_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "tier": {
+                  "type": "string"
+                },
+                "requirement": {
+                  "type": "string"
+                },
+                "points": {
+                  "type": "integer"
+                },
+                "rarity": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "total_badges": {
+            "type": "integer"
+          }
+        }
+      },
+      "RecordScanRequest": {
+        "type": "object",
+        "required": [
+          "scan_date"
+        ],
+        "properties": {
+          "scan_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "contaminants_detected": {
+            "type": "integer",
+            "default": 0
+          }
+        }
+      },
+      "ActivityRecordResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "streak_updated": {
+            "type": "boolean"
+          },
+          "current_streak": {
+            "type": "integer"
+          },
+          "badges_earned": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "RegisterRequest": {
+        "type": "object",
+        "required": [
+          "email",
+          "password",
+          "name"
+        ],
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "type": "string",
+            "minLength": 8
+          },
+          "name": {
+            "type": "string"
+          },
+          "medical_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "health_goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "LoginRequest": {
+        "type": "object",
+        "required": [
+          "email",
+          "password"
+        ],
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "AuthResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "token": {
+            "type": "string"
+          },
+          "refresh_token": {
+            "type": "string"
+          },
+          "expires_in": {
+            "type": "integer"
+          }
+        }
+      },
+      "UserProfile": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "medical_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "health_goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "anonymous_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          }
+        }
+      },
+      "UpdateProfileRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "medical_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "health_goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

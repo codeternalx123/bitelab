@@ -1,0 +1,215 @@
+# Kubernetes Deployment Manifest for Recommendation Serving
+# Optimized for TikTok-scale production deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation-serving
+  namespace: wellomex
+  labels:
+    app: recommendation-serving
+    version: v1.0.0
+    component: recommendation
+    tier: backend
+spec:
+  replicas: 3  # Start with 3, HPA will scale
+  revisionHistoryLimit: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0  # Zero-downtime deployment
+  selector:
+    matchLabels:
+      app: recommendation-serving
+  template:
+    metadata:
+      labels:
+        app: recommendation-serving
+        version: v1.0.0
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: recommendation-serving
+      terminationGracePeriodSeconds: 60  # Graceful shutdown
+      
+      # Init container for cache warming
+      initContainers:
+      - name: cache-warmer
+        image: wellomex/recommendation-serving:v1.0.0
+        command: ['python', '-m', 'scripts.warm_cache']
+        env:
+        - name: REDIS_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: recommendation-config
+              key: redis_host
+        - name: REDIS_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: recommendation-config
+              key: redis_port
+      
+      containers:
+      - name: recommendation-serving
+        image: wellomex/recommendation-serving:v1.0.0
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - name: http
+          containerPort: 8000
+          protocol: TCP
+        - name: metrics
+          containerPort: 9090
+          protocol: TCP
+        
+        # Environment variables
+        env:
+        - name: SERVICE_NAME
+          value: "recommendation-serving"
+        - name: SERVICE_VERSION
+          value: "v1.0.0"
+        - name: ENVIRONMENT
+          value: "production"
+        - name: WORKERS
+          value: "4"
+        - name: HOST
+          value: "0.0.0.0"
+        - name: PORT
+          value: "8000"
+        
+        # Redis configuration
+        - name: REDIS_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: recommendation-config
+              key: redis_host
+        - name: REDIS_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: recommendation-config
+              key: redis_port
+        - name: REDIS_POOL_SIZE
+          value: "50"
+        
+        # Rate limiting
+        - name: RATE_LIMIT_RPS
+          value: "1000.0"
+        
+        # Security
+        - name: ENABLE_TLS
+          value: "true"
+        - name: AUTH_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: recommendation-secrets
+              key: auth_secret_key
+        
+        # Datacenter location
+        - name: DATACENTER_LOCATION
+          value: "us_east"
+        
+        # Resource requests and limits
+        resources:
+          requests:
+            cpu: "1000m"      # 1 CPU core
+            memory: "2Gi"     # 2GB RAM
+          limits:
+            cpu: "2000m"      # 2 CPU cores
+            memory: "4Gi"     # 4GB RAM
+        
+        # Liveness probe
+        livenessProbe:
+          httpGet:
+            path: /health/live
+            port: http
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3
+        
+        # Readiness probe
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: http
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          successThreshold: 1
+          failureThreshold: 3
+        
+        # Startup probe (for slow-starting apps)
+        startupProbe:
+          httpGet:
+            path: /health/live
+            port: http
+          initialDelaySeconds: 0
+          periodSeconds: 5
+          timeoutSeconds: 3
+          successThreshold: 1
+          failureThreshold: 12  # 60 seconds max startup time
+        
+        # Lifecycle hooks
+        lifecycle:
+          preStop:
+            exec:
+              command: ["/bin/sh", "-c", "sleep 15"]  # Allow time for load balancer to drain
+        
+        # Security context
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          runAsUser: 1000
+          capabilities:
+            drop:
+            - ALL
+        
+        # Volume mounts
+        volumeMounts:
+        - name: cache-volume
+          mountPath: /app/cache
+        - name: logs-volume
+          mountPath: /app/logs
+        - name: tls-certs
+          mountPath: /etc/ssl/certs
+          readOnly: true
+      
+      # Volumes
+      volumes:
+      - name: cache-volume
+        emptyDir:
+          sizeLimit: 1Gi
+      - name: logs-volume
+        emptyDir:
+          sizeLimit: 500Mi
+      - name: tls-certs
+        secret:
+          secretName: recommendation-tls
+          optional: false
+      
+      # Pod affinity/anti-affinity
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - recommendation-serving
+              topologyKey: kubernetes.io/hostname
+      
+      # Tolerations for dedicated nodes
+      tolerations:
+      - key: "workload-type"
+        operator: "Equal"
+        value: "recommendation"
+        effect: "NoSchedule"

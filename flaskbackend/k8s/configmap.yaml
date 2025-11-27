@@ -1,0 +1,85 @@
+# ConfigMap for Recommendation Serving Configuration
+# Non-sensitive configuration values
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: recommendation-config
+  namespace: wellomex
+  labels:
+    app: recommendation-serving
+data:
+  # Redis configuration
+  redis_host: "redis-master.wellomex.svc.cluster.local"
+  redis_port: "6379"
+  redis_db: "0"
+  redis_pool_size: "50"
+  
+  # Memcached configuration
+  memcached_servers: "memcached-0.wellomex.svc.cluster.local:11211,memcached-1.wellomex.svc.cluster.local:11211"
+  
+  # Performance targets
+  target_p50_ms: "50.0"
+  target_p95_ms: "200.0"
+  target_p99_ms: "500.0"
+  target_qps: "10000"
+  
+  # Cache configuration
+  enable_l1_cache: "true"
+  l1_cache_size: "10000"
+  enable_l2_redis: "true"
+  enable_l3_memcached: "true"
+  
+  # Rate limiting
+  enable_rate_limiting: "true"
+  rate_limit_rps: "1000.0"
+  rate_limit_burst: "2000"
+  
+  # Request processing
+  enable_request_batching: "true"
+  batch_size: "32"
+  batch_timeout_ms: "10.0"
+  enable_request_deduplication: "true"
+  dedup_window_seconds: "1.0"
+  
+  # Model serving
+  enable_model_quantization: "true"
+  quantization_dtype: "int8"
+  enable_model_pruning: "false"
+  
+  # Connection pooling
+  enable_connection_pooling: "true"
+  connection_pool_size: "100"
+  connection_timeout_seconds: "5.0"
+  
+  # Monitoring
+  enable_metrics: "true"
+  metrics_port: "9090"
+  enable_tracing: "true"
+  tracing_sample_rate: "0.1"
+  enable_logging: "true"
+  log_level: "INFO"
+  
+  # Health checks
+  enable_health_checks: "true"
+  health_check_interval_seconds: "10.0"
+  
+  # Autoscaling
+  enable_autoscaling: "true"
+  min_replicas: "3"
+  max_replicas: "20"
+  target_cpu_percent: "70.0"
+  
+  # Geo-distribution
+  enable_geo_routing: "true"
+  datacenter_location: "us_east"
+  
+  # Feature flags
+  feature_flags: |
+    {
+      "enable_prefetching": true,
+      "enable_adaptive_rate_limiting": true,
+      "enable_circuit_breakers": true,
+      "enable_canary_deployments": false,
+      "enable_ab_testing": true
+    }

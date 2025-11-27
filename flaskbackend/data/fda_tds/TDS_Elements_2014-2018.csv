@@ -1,0 +1,301 @@
+Food_Code,Food_Name,Category,Description,Element,Concentration,Unit,Year
+1001,Whole milk,Dairy,Whole milk - raw,As,0.0643,mg/kg,2018
+1001,Whole milk,Dairy,Whole milk - raw,Cd,0.0744,mg/kg,2019
+1001,Whole milk,Dairy,Whole milk - raw,Pb,0.0231,mg/kg,2018
+1001,Whole milk,Dairy,Whole milk - raw,Hg,0.068,mg/kg,2022
+1001,Whole milk,Dairy,Whole milk - raw,Se,0.8785,mg/kg,2021
+1001,Whole milk,Dairy,Whole milk - raw,Fe,4.1465,mg/kg,2018
+1001,Whole milk,Dairy,Whole milk - raw,Zn,22.6452,mg/kg,2022
+1001,Whole milk,Dairy,Whole milk - raw,Cu,60.5999,mg/kg,2022
+1001,Whole milk,Dairy,Whole milk - raw,Ca,1074.3045,mg/kg,2022
+1001,Whole milk,Dairy,Whole milk - raw,Mg,2155.6471,mg/kg,2021
+1001,Whole milk,Dairy,Whole milk - raw,Na,2987.4019,mg/kg,2018
+1001,Whole milk,Dairy,Whole milk - raw,K,3818.1561,mg/kg,2019
+1001,Whole milk,Dairy,Whole milk - raw,P,3520.883,mg/kg,2020
+1001,Whole milk,Dairy,Whole milk - raw,Mn,2.7859,mg/kg,2019
+1001,Whole milk,Dairy,Whole milk - raw,Cr,9.5726,mg/kg,2020
+1001,Whole milk,Dairy,Whole milk - raw,Mo,1.0311,mg/kg,2021
+1001,Whole milk,Dairy,Whole milk - raw,I,0.9762,mg/kg,2020
+1001,Whole milk,Dairy,Whole milk - raw,Ni,6.0412,mg/kg,2018
+1001,Whole milk,Dairy,Whole milk - raw,Co,7.3,mg/kg,2022
+1001,Whole milk,Dairy,Whole milk - raw,Al,1.257,mg/kg,2021
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,As,0.0088,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Cd,0.0831,mg/kg,2022
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Pb,0.0887,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Hg,0.0582,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Se,0.4678,mg/kg,2019
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Fe,77.5338,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Zn,85.6765,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Cu,38.6325,mg/kg,2021
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Ca,3214.8538,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Mg,897.0051,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Na,1126.5845,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,K,3538.9195,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,P,3084.7419,mg/kg,2019
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Mn,5.3461,mg/kg,2019
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Cr,1.6424,mg/kg,2021
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Mo,2.7068,mg/kg,2022
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,I,2.204,mg/kg,2020
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Ni,8.4301,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Co,2.2982,mg/kg,2018
+1002,Cheddar cheese,Dairy,Cheddar cheese - as purchased,Al,8.0524,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",As,0.0275,mg/kg,2019
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Cd,0.0914,mg/kg,2022
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Pb,0.0878,mg/kg,2020
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Hg,0.0221,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Se,3.9624,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Fe,15.1443,mg/kg,2019
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Zn,25.4161,mg/kg,2022
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Cu,54.3588,mg/kg,2022
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Ca,2199.3258,mg/kg,2022
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Mg,2057.0625,mg/kg,2019
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Na,4986.8963,mg/kg,2019
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",K,2596.6788,mg/kg,2018
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",P,3803.3326,mg/kg,2018
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Mn,1.5369,mg/kg,2019
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Cr,7.9229,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Mo,5.9681,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",I,3.8224,mg/kg,2021
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Ni,5.2959,mg/kg,2022
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Co,8.6092,mg/kg,2018
+1003,"Yogurt, plain",Dairy,"Yogurt, plain - as purchased",Al,6.806,mg/kg,2018
+2001,Ground beef,Meat,Ground beef - cooked,As,0.0685,mg/kg,2022
+2001,Ground beef,Meat,Ground beef - cooked,Cd,0.0753,mg/kg,2020
+2001,Ground beef,Meat,Ground beef - cooked,Pb,0.012,mg/kg,2021
+2001,Ground beef,Meat,Ground beef - cooked,Hg,0.0167,mg/kg,2018
+2001,Ground beef,Meat,Ground beef - cooked,Se,9.5386,mg/kg,2020
+2001,Ground beef,Meat,Ground beef - cooked,Fe,97.2169,mg/kg,2019
+2001,Ground beef,Meat,Ground beef - cooked,Zn,51.2605,mg/kg,2018
+2001,Ground beef,Meat,Ground beef - cooked,Cu,87.1813,mg/kg,2020
+2001,Ground beef,Meat,Ground beef - cooked,Ca,4224.1798,mg/kg,2022
+2001,Ground beef,Meat,Ground beef - cooked,Mg,3083.954,mg/kg,2019
+2001,Ground beef,Meat,Ground beef - cooked,Na,1932.1779,mg/kg,2019
+2001,Ground beef,Meat,Ground beef - cooked,K,2742.9572,mg/kg,2022
+2001,Ground beef,Meat,Ground beef - cooked,P,4600.6181,mg/kg,2022
+2001,Ground beef,Meat,Ground beef - cooked,Mn,3.2483,mg/kg,2018
+2001,Ground beef,Meat,Ground beef - cooked,Cr,1.1276,mg/kg,2020
+2001,Ground beef,Meat,Ground beef - cooked,Mo,8.7884,mg/kg,2020
+2001,Ground beef,Meat,Ground beef - cooked,I,2.4021,mg/kg,2019
+2001,Ground beef,Meat,Ground beef - cooked,Ni,8.7813,mg/kg,2018
+2001,Ground beef,Meat,Ground beef - cooked,Co,0.8657,mg/kg,2021
+2001,Ground beef,Meat,Ground beef - cooked,Al,8.1621,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,As,0.0768,mg/kg,2019
+2002,Chicken breast,Meat,Chicken breast - cooked,Cd,0.0663,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,Pb,0.0173,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,Hg,0.0874,mg/kg,2021
+2002,Chicken breast,Meat,Chicken breast - cooked,Se,9.644,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,Fe,75.7713,mg/kg,2019
+2002,Chicken breast,Meat,Chicken breast - cooked,Zn,71.5819,mg/kg,2021
+2002,Chicken breast,Meat,Chicken breast - cooked,Cu,99.5198,mg/kg,2020
+2002,Chicken breast,Meat,Chicken breast - cooked,Ca,2246.6904,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,Mg,2312.2821,mg/kg,2019
+2002,Chicken breast,Meat,Chicken breast - cooked,Na,1201.017,mg/kg,2020
+2002,Chicken breast,Meat,Chicken breast - cooked,K,203.0679,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,P,1227.5622,mg/kg,2019
+2002,Chicken breast,Meat,Chicken breast - cooked,Mn,0.0818,mg/kg,2018
+2002,Chicken breast,Meat,Chicken breast - cooked,Cr,2.2971,mg/kg,2018
+2002,Chicken breast,Meat,Chicken breast - cooked,Mo,8.5978,mg/kg,2018
+2002,Chicken breast,Meat,Chicken breast - cooked,I,5.1464,mg/kg,2020
+2002,Chicken breast,Meat,Chicken breast - cooked,Ni,6.6931,mg/kg,2019
+2002,Chicken breast,Meat,Chicken breast - cooked,Co,5.3969,mg/kg,2022
+2002,Chicken breast,Meat,Chicken breast - cooked,Al,5.7664,mg/kg,2019
+2003,Pork chop,Meat,Pork chop - cooked,As,0.0787,mg/kg,2021
+2003,Pork chop,Meat,Pork chop - cooked,Cd,0.0199,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,Pb,0.0662,mg/kg,2020
+2003,Pork chop,Meat,Pork chop - cooked,Hg,0.0429,mg/kg,2021
+2003,Pork chop,Meat,Pork chop - cooked,Se,8.6397,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,Fe,67.6631,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,Zn,7.0007,mg/kg,2020
+2003,Pork chop,Meat,Pork chop - cooked,Cu,80.2587,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,Ca,1318.416,mg/kg,2019
+2003,Pork chop,Meat,Pork chop - cooked,Mg,2727.8002,mg/kg,2019
+2003,Pork chop,Meat,Pork chop - cooked,Na,2167.22,mg/kg,2020
+2003,Pork chop,Meat,Pork chop - cooked,K,2366.8775,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,P,2271.3407,mg/kg,2022
+2003,Pork chop,Meat,Pork chop - cooked,Mn,0.9881,mg/kg,2022
+2003,Pork chop,Meat,Pork chop - cooked,Cr,8.3619,mg/kg,2018
+2003,Pork chop,Meat,Pork chop - cooked,Mo,9.2644,mg/kg,2019
+2003,Pork chop,Meat,Pork chop - cooked,I,1.6714,mg/kg,2021
+2003,Pork chop,Meat,Pork chop - cooked,Ni,4.8188,mg/kg,2021
+2003,Pork chop,Meat,Pork chop - cooked,Co,9.0254,mg/kg,2019
+2003,Pork chop,Meat,Pork chop - cooked,Al,3.7959,mg/kg,2021
+3001,White bread,Grain,White bread - as purchased,As,0.0273,mg/kg,2021
+3001,White bread,Grain,White bread - as purchased,Cd,0.0292,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Pb,0.0665,mg/kg,2021
+3001,White bread,Grain,White bread - as purchased,Hg,0.0163,mg/kg,2020
+3001,White bread,Grain,White bread - as purchased,Se,2.1848,mg/kg,2018
+3001,White bread,Grain,White bread - as purchased,Fe,58.3388,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Zn,7.0348,mg/kg,2020
+3001,White bread,Grain,White bread - as purchased,Cu,6.6594,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Ca,2436.2637,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Mg,871.4204,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Na,492.5462,mg/kg,2019
+3001,White bread,Grain,White bread - as purchased,K,435.7545,mg/kg,2018
+3001,White bread,Grain,White bread - as purchased,P,3408.5415,mg/kg,2019
+3001,White bread,Grain,White bread - as purchased,Mn,4.0437,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Cr,2.4697,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Mo,0.407,mg/kg,2018
+3001,White bread,Grain,White bread - as purchased,I,4.1981,mg/kg,2022
+3001,White bread,Grain,White bread - as purchased,Ni,5.6566,mg/kg,2020
+3001,White bread,Grain,White bread - as purchased,Co,9.3477,mg/kg,2019
+3001,White bread,Grain,White bread - as purchased,Al,6.7006,mg/kg,2020
+3002,Brown rice,Grain,Brown rice - cooked,As,0.0246,mg/kg,2021
+3002,Brown rice,Grain,Brown rice - cooked,Cd,0.014,mg/kg,2020
+3002,Brown rice,Grain,Brown rice - cooked,Pb,0.0463,mg/kg,2018
+3002,Brown rice,Grain,Brown rice - cooked,Hg,0.0019,mg/kg,2022
+3002,Brown rice,Grain,Brown rice - cooked,Se,9.9846,mg/kg,2018
+3002,Brown rice,Grain,Brown rice - cooked,Fe,8.2528,mg/kg,2019
+3002,Brown rice,Grain,Brown rice - cooked,Zn,51.0826,mg/kg,2019
+3002,Brown rice,Grain,Brown rice - cooked,Cu,93.3927,mg/kg,2018
+3002,Brown rice,Grain,Brown rice - cooked,Ca,4408.4242,mg/kg,2020
+3002,Brown rice,Grain,Brown rice - cooked,Mg,1496.4382,mg/kg,2021
+3002,Brown rice,Grain,Brown rice - cooked,Na,4185.3503,mg/kg,2020
+3002,Brown rice,Grain,Brown rice - cooked,K,3097.2211,mg/kg,2022
+3002,Brown rice,Grain,Brown rice - cooked,P,138.3332,mg/kg,2022
+3002,Brown rice,Grain,Brown rice - cooked,Mn,3.0008,mg/kg,2018
+3002,Brown rice,Grain,Brown rice - cooked,Cr,9.3899,mg/kg,2019
+3002,Brown rice,Grain,Brown rice - cooked,Mo,2.652,mg/kg,2018
+3002,Brown rice,Grain,Brown rice - cooked,I,7.4267,mg/kg,2019
+3002,Brown rice,Grain,Brown rice - cooked,Ni,2.7308,mg/kg,2022
+3002,Brown rice,Grain,Brown rice - cooked,Co,2.1142,mg/kg,2020
+3002,Brown rice,Grain,Brown rice - cooked,Al,2.0439,mg/kg,2020
+3003,Oatmeal,Grain,Oatmeal - cooked,As,0.051,mg/kg,2020
+3003,Oatmeal,Grain,Oatmeal - cooked,Cd,0.0906,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,Pb,0.0101,mg/kg,2021
+3003,Oatmeal,Grain,Oatmeal - cooked,Hg,0.0831,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,Se,0.0454,mg/kg,2019
+3003,Oatmeal,Grain,Oatmeal - cooked,Fe,64.0742,mg/kg,2020
+3003,Oatmeal,Grain,Oatmeal - cooked,Zn,16.9966,mg/kg,2021
+3003,Oatmeal,Grain,Oatmeal - cooked,Cu,55.6164,mg/kg,2021
+3003,Oatmeal,Grain,Oatmeal - cooked,Ca,2848.4436,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,Mg,468.6949,mg/kg,2019
+3003,Oatmeal,Grain,Oatmeal - cooked,Na,2773.3924,mg/kg,2020
+3003,Oatmeal,Grain,Oatmeal - cooked,K,2954.2969,mg/kg,2019
+3003,Oatmeal,Grain,Oatmeal - cooked,P,2205.9549,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,Mn,3.0895,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,Cr,8.9903,mg/kg,2019
+3003,Oatmeal,Grain,Oatmeal - cooked,Mo,6.8238,mg/kg,2018
+3003,Oatmeal,Grain,Oatmeal - cooked,I,3.5432,mg/kg,2022
+3003,Oatmeal,Grain,Oatmeal - cooked,Ni,8.8425,mg/kg,2021
+3003,Oatmeal,Grain,Oatmeal - cooked,Co,9.7386,mg/kg,2019
+3003,Oatmeal,Grain,Oatmeal - cooked,Al,9.2584,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,As,0.0866,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,Cd,0.0883,mg/kg,2018
+4001,Spinach,Vegetable,Spinach - cooked,Pb,0.0188,mg/kg,2020
+4001,Spinach,Vegetable,Spinach - cooked,Hg,0.0785,mg/kg,2021
+4001,Spinach,Vegetable,Spinach - cooked,Se,8.0243,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,Fe,27.4138,mg/kg,2018
+4001,Spinach,Vegetable,Spinach - cooked,Zn,38.8716,mg/kg,2018
+4001,Spinach,Vegetable,Spinach - cooked,Cu,86.0007,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,Ca,1077.9069,mg/kg,2021
+4001,Spinach,Vegetable,Spinach - cooked,Mg,1813.3263,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,Na,1192.3254,mg/kg,2019
+4001,Spinach,Vegetable,Spinach - cooked,K,2052.4833,mg/kg,2020
+4001,Spinach,Vegetable,Spinach - cooked,P,4335.3294,mg/kg,2020
+4001,Spinach,Vegetable,Spinach - cooked,Mn,3.5179,mg/kg,2022
+4001,Spinach,Vegetable,Spinach - cooked,Cr,4.0028,mg/kg,2022
+4001,Spinach,Vegetable,Spinach - cooked,Mo,3.3182,mg/kg,2018
+4001,Spinach,Vegetable,Spinach - cooked,I,1.1623,mg/kg,2020
+4001,Spinach,Vegetable,Spinach - cooked,Ni,1.7939,mg/kg,2020
+4001,Spinach,Vegetable,Spinach - cooked,Co,0.3922,mg/kg,2022
+4001,Spinach,Vegetable,Spinach - cooked,Al,4.3513,mg/kg,2020
+4002,Broccoli,Vegetable,Broccoli - cooked,As,0.0442,mg/kg,2022
+4002,Broccoli,Vegetable,Broccoli - cooked,Cd,0.0124,mg/kg,2022
+4002,Broccoli,Vegetable,Broccoli - cooked,Pb,0.0198,mg/kg,2018
+4002,Broccoli,Vegetable,Broccoli - cooked,Hg,0.0712,mg/kg,2018
+4002,Broccoli,Vegetable,Broccoli - cooked,Se,5.204,mg/kg,2022
+4002,Broccoli,Vegetable,Broccoli - cooked,Fe,68.9989,mg/kg,2019
+4002,Broccoli,Vegetable,Broccoli - cooked,Zn,37.0579,mg/kg,2018
+4002,Broccoli,Vegetable,Broccoli - cooked,Cu,94.9386,mg/kg,2020
+4002,Broccoli,Vegetable,Broccoli - cooked,Ca,3153.4615,mg/kg,2018
+4002,Broccoli,Vegetable,Broccoli - cooked,Mg,3626.7959,mg/kg,2020
+4002,Broccoli,Vegetable,Broccoli - cooked,Na,2584.9003,mg/kg,2021
+4002,Broccoli,Vegetable,Broccoli - cooked,K,1698.2962,mg/kg,2020
+4002,Broccoli,Vegetable,Broccoli - cooked,P,2816.6211,mg/kg,2019
+4002,Broccoli,Vegetable,Broccoli - cooked,Mn,4.2103,mg/kg,2021
+4002,Broccoli,Vegetable,Broccoli - cooked,Cr,6.7764,mg/kg,2019
+4002,Broccoli,Vegetable,Broccoli - cooked,Mo,6.159,mg/kg,2020
+4002,Broccoli,Vegetable,Broccoli - cooked,I,4.0667,mg/kg,2018
+4002,Broccoli,Vegetable,Broccoli - cooked,Ni,3.0457,mg/kg,2019
+4002,Broccoli,Vegetable,Broccoli - cooked,Co,4.3046,mg/kg,2022
+4002,Broccoli,Vegetable,Broccoli - cooked,Al,6.0705,mg/kg,2020
+4003,Carrots,Vegetable,Carrots - cooked,As,0.047,mg/kg,2021
+4003,Carrots,Vegetable,Carrots - cooked,Cd,0.0679,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,Pb,0.0478,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Hg,0.0662,mg/kg,2020
+4003,Carrots,Vegetable,Carrots - cooked,Se,5.1594,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,Fe,34.1836,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Zn,67.6068,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Cu,80.8497,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Ca,219.6844,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Mg,4921.2865,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,Na,4263.7147,mg/kg,2018
+4003,Carrots,Vegetable,Carrots - cooked,K,2331.5392,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,P,1052.7327,mg/kg,2021
+4003,Carrots,Vegetable,Carrots - cooked,Mn,4.9488,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Cr,1.4842,mg/kg,2018
+4003,Carrots,Vegetable,Carrots - cooked,Mo,8.9277,mg/kg,2018
+4003,Carrots,Vegetable,Carrots - cooked,I,7.7864,mg/kg,2019
+4003,Carrots,Vegetable,Carrots - cooked,Ni,1.7671,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,Co,4.6509,mg/kg,2022
+4003,Carrots,Vegetable,Carrots - cooked,Al,2.4995,mg/kg,2018
+5001,Apple,Fruit,Apple - raw,As,0.0462,mg/kg,2021
+5001,Apple,Fruit,Apple - raw,Cd,0.0671,mg/kg,2022
+5001,Apple,Fruit,Apple - raw,Pb,0.0599,mg/kg,2021
+5001,Apple,Fruit,Apple - raw,Hg,0.0617,mg/kg,2022
+5001,Apple,Fruit,Apple - raw,Se,4.2731,mg/kg,2022
+5001,Apple,Fruit,Apple - raw,Fe,45.1454,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,Zn,74.6219,mg/kg,2021
+5001,Apple,Fruit,Apple - raw,Cu,45.5569,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,Ca,4215.3282,mg/kg,2020
+5001,Apple,Fruit,Apple - raw,Mg,3852.4871,mg/kg,2022
+5001,Apple,Fruit,Apple - raw,Na,2474.5254,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,K,1445.5275,mg/kg,2018
+5001,Apple,Fruit,Apple - raw,P,3596.3698,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,Mn,2.7244,mg/kg,2020
+5001,Apple,Fruit,Apple - raw,Cr,8.9313,mg/kg,2018
+5001,Apple,Fruit,Apple - raw,Mo,1.3924,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,I,3.8365,mg/kg,2019
+5001,Apple,Fruit,Apple - raw,Ni,7.0671,mg/kg,2018
+5001,Apple,Fruit,Apple - raw,Co,4.1545,mg/kg,2020
+5001,Apple,Fruit,Apple - raw,Al,5.4307,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,As,0.0072,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Cd,0.0396,mg/kg,2022
+5002,Banana,Fruit,Banana - raw,Pb,0.0947,mg/kg,2018
+5002,Banana,Fruit,Banana - raw,Hg,0.0858,mg/kg,2022
+5002,Banana,Fruit,Banana - raw,Se,3.81,mg/kg,2018
+5002,Banana,Fruit,Banana - raw,Fe,94.3314,mg/kg,2020
+5002,Banana,Fruit,Banana - raw,Zn,75.594,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Cu,54.2838,mg/kg,2022
+5002,Banana,Fruit,Banana - raw,Ca,4019.354,mg/kg,2019
+5002,Banana,Fruit,Banana - raw,Mg,2492.3244,mg/kg,2020
+5002,Banana,Fruit,Banana - raw,Na,2235.5963,mg/kg,2018
+5002,Banana,Fruit,Banana - raw,K,2005.4003,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,P,3648.4888,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Mn,9.1962,mg/kg,2022
+5002,Banana,Fruit,Banana - raw,Cr,5.3459,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Mo,5.923,mg/kg,2018
+5002,Banana,Fruit,Banana - raw,I,0.8486,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Ni,1.3656,mg/kg,2021
+5002,Banana,Fruit,Banana - raw,Co,1.8255,mg/kg,2020
+5002,Banana,Fruit,Banana - raw,Al,3.7972,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,As,0.046,mg/kg,2020
+5003,Orange,Fruit,Orange - raw,Cd,0.0764,mg/kg,2021
+5003,Orange,Fruit,Orange - raw,Pb,0.0285,mg/kg,2021
+5003,Orange,Fruit,Orange - raw,Hg,0.026,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,Se,4.7084,mg/kg,2022
+5003,Orange,Fruit,Orange - raw,Fe,6.1565,mg/kg,2020
+5003,Orange,Fruit,Orange - raw,Zn,23.198,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,Cu,78.3421,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,Ca,3795.7427,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,Mg,1076.8673,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,Na,3144.5447,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,K,718.4828,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,P,2863.451,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,Mn,4.6557,mg/kg,2020
+5003,Orange,Fruit,Orange - raw,Cr,7.6713,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,Mo,6.0629,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,I,7.7801,mg/kg,2019
+5003,Orange,Fruit,Orange - raw,Ni,9.6476,mg/kg,2018
+5003,Orange,Fruit,Orange - raw,Co,5.7911,mg/kg,2020
+5003,Orange,Fruit,Orange - raw,Al,5.7622,mg/kg,2021

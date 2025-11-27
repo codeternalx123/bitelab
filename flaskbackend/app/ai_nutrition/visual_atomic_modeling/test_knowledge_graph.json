@@ -1,0 +1,1237 @@
+{
+  "nodes": [
+    {
+      "id": "person:John",
+      "type": "person",
+      "properties": {
+        "name": "John",
+        "age": 55,
+        "diseases": [
+          "diabetes_type2",
+          "hypertension",
+          "coronary_artery_disease"
+        ],
+        "dietary_preferences": "non-vegetarian"
+      }
+    },
+    {
+      "id": "person:Mary",
+      "type": "person",
+      "properties": {
+        "name": "Mary",
+        "age": 52,
+        "diseases": [
+          "osteoporosis",
+          "hypothyroidism"
+        ],
+        "dietary_preferences": "vegetarian"
+      }
+    },
+    {
+      "id": "person:Sarah",
+      "type": "person",
+      "properties": {
+        "name": "Sarah",
+        "age": 28,
+        "diseases": [
+          "celiac",
+          "ibs"
+        ],
+        "dietary_preferences": "gluten-free"
+      }
+    },
+    {
+      "id": "disease:diabetes_type2",
+      "type": "disease",
+      "properties": {
+        "disease_id": "diabetes_type2",
+        "name": "Type 2 Diabetes Mellitus",
+        "category": "endocrine",
+        "icd10_codes": [
+          "E11"
+        ],
+        "meal_timing_important": true,
+        "portion_control_critical": true
+      }
+    },
+    {
+      "id": "disease:hypertension",
+      "type": "disease",
+      "properties": {
+        "disease_id": "hypertension",
+        "name": "High Blood Pressure",
+        "category": "cardiovascular",
+        "icd10_codes": [
+          "I10"
+        ],
+        "meal_timing_important": false,
+        "portion_control_critical": true
+      }
+    },
+    {
+      "id": "disease:coronary_artery_disease",
+      "type": "disease",
+      "properties": {
+        "disease_id": "coronary_artery_disease",
+        "name": "Coronary Artery Disease",
+        "category": "cardiovascular",
+        "icd10_codes": [
+          "I25.1"
+        ],
+        "meal_timing_important": false,
+        "portion_control_critical": true
+      }
+    },
+    {
+      "id": "disease:osteoporosis",
+      "type": "disease",
+      "properties": {
+        "disease_id": "osteoporosis",
+        "name": "Osteoporosis",
+        "category": "musculoskeletal",
+        "icd10_codes": [
+          "M81.0"
+        ],
+        "meal_timing_important": false,
+        "portion_control_critical": false
+      }
+    },
+    {
+      "id": "disease:hypothyroidism",
+      "type": "disease",
+      "properties": {
+        "disease_id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "category": "endocrine",
+        "icd10_codes": [
+          "E03.9"
+        ],
+        "meal_timing_important": true,
+        "portion_control_critical": false
+      }
+    },
+    {
+      "id": "disease:celiac",
+      "type": "disease",
+      "properties": {
+        "disease_id": "celiac",
+        "name": "Celiac Disease",
+        "category": "digestive",
+        "icd10_codes": [
+          "K90.0"
+        ],
+        "meal_timing_important": true,
+        "portion_control_critical": false
+      }
+    },
+    {
+      "id": "disease:ibs",
+      "type": "disease",
+      "properties": {
+        "disease_id": "ibs",
+        "name": "Irritable Bowel Syndrome",
+        "category": "digestive",
+        "icd10_codes": [
+          "K58.9"
+        ],
+        "meal_timing_important": true,
+        "portion_control_critical": false
+      }
+    },
+    {
+      "id": "nutrient:carbohydrates",
+      "type": "nutrient",
+      "properties": {
+        "name": "carbohydrates",
+        "target_min": 40,
+        "target_max": 50,
+        "unit": "%",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Type 2 Diabetes Mellitus",
+            "reason": "Weight management and glucose control"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:fiber",
+      "type": "nutrient",
+      "properties": {
+        "name": "fiber",
+        "target_min": 30,
+        "target_max": 30,
+        "unit": "g",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Type 2 Diabetes Mellitus",
+            "reason": "Improves insulin sensitivity"
+          },
+          {
+            "member": "John",
+            "disease": "Coronary Artery Disease",
+            "reason": "Cholesterol reduction"
+          },
+          {
+            "member": "Mary",
+            "disease": "Hypothyroidism",
+            "reason": "Manage constipation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:sugar",
+      "type": "nutrient",
+      "properties": {
+        "name": "sugar",
+        "target_min": null,
+        "target_max": 20,
+        "unit": "g",
+        "priority": "critical",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Type 2 Diabetes Mellitus",
+            "reason": "Glycemic control"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:saturated_fat",
+      "type": "nutrient",
+      "properties": {
+        "name": "saturated_fat",
+        "target_min": null,
+        "target_max": 5,
+        "unit": "%",
+        "priority": "critical",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Type 2 Diabetes Mellitus",
+            "reason": "Reduce insulin resistance"
+          },
+          {
+            "member": "John",
+            "disease": "Coronary Artery Disease",
+            "reason": "Reduce plaque formation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:calories",
+      "type": "nutrient",
+      "properties": {
+        "name": "calories",
+        "target_min": null,
+        "target_max": null,
+        "unit": "kcal",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Type 2 Diabetes Mellitus",
+            "reason": "Weight loss if overweight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:sodium",
+      "type": "nutrient",
+      "properties": {
+        "name": "sodium",
+        "target_min": null,
+        "target_max": 1500,
+        "unit": "mg",
+        "priority": "critical",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Hypertension (High Blood Pressure)",
+            "reason": "DASH diet recommended"
+          },
+          {
+            "member": "John",
+            "disease": "Coronary Artery Disease",
+            "reason": "Blood pressure management"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:potassium",
+      "type": "nutrient",
+      "properties": {
+        "name": "potassium",
+        "target_min": 3500,
+        "target_max": 4700,
+        "unit": "mg",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Hypertension (High Blood Pressure)",
+            "reason": "Counteracts sodium"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:calcium",
+      "type": "nutrient",
+      "properties": {
+        "name": "calcium",
+        "target_min": 1200,
+        "target_max": 1200,
+        "unit": "mg",
+        "priority": "critical",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Hypertension (High Blood Pressure)",
+            "reason": "Blood pressure regulation"
+          },
+          {
+            "member": "Mary",
+            "disease": "Osteoporosis",
+            "reason": "Bone mineral density"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:magnesium",
+      "type": "nutrient",
+      "properties": {
+        "name": "magnesium",
+        "target_min": 310,
+        "target_max": 420,
+        "unit": "mg",
+        "priority": "medium",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Hypertension (High Blood Pressure)",
+            "reason": "Vessel relaxation"
+          },
+          {
+            "member": "Mary",
+            "disease": "Osteoporosis",
+            "reason": "Bone structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:cholesterol",
+      "type": "nutrient",
+      "properties": {
+        "name": "cholesterol",
+        "target_min": null,
+        "target_max": 200,
+        "unit": "mg",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Coronary Artery Disease",
+            "reason": "Lower LDL cholesterol"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:omega3",
+      "type": "nutrient",
+      "properties": {
+        "name": "omega3",
+        "target_min": 2,
+        "target_max": 3,
+        "unit": "g",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "John",
+            "disease": "Coronary Artery Disease",
+            "reason": "Anti-inflammatory and cardioprotective"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:vitamin_d",
+      "type": "nutrient",
+      "properties": {
+        "name": "vitamin_d",
+        "target_min": 800,
+        "target_max": 2000,
+        "unit": "IU",
+        "priority": "critical",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Osteoporosis",
+            "reason": "Calcium absorption"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:vitamin_k",
+      "type": "nutrient",
+      "properties": {
+        "name": "vitamin_k",
+        "target_min": 90,
+        "target_max": 120,
+        "unit": "mcg",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Osteoporosis",
+            "reason": "Bone formation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:protein",
+      "type": "nutrient",
+      "properties": {
+        "name": "protein",
+        "target_min": 1.0,
+        "target_max": 1.2,
+        "unit": "g/kg",
+        "priority": "medium",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Osteoporosis",
+            "reason": "Bone matrix"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:iodine",
+      "type": "nutrient",
+      "properties": {
+        "name": "iodine",
+        "target_min": 150,
+        "target_max": 250,
+        "unit": "mcg",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Hypothyroidism",
+            "reason": "Thyroid hormone production"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:selenium",
+      "type": "nutrient",
+      "properties": {
+        "name": "selenium",
+        "target_min": 55,
+        "target_max": 200,
+        "unit": "mcg",
+        "priority": "high",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Hypothyroidism",
+            "reason": "Thyroid function"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nutrient:zinc",
+      "type": "nutrient",
+      "properties": {
+        "name": "zinc",
+        "target_min": 8,
+        "target_max": 11,
+        "unit": "mg",
+        "priority": "medium",
+        "reasons": [
+          {
+            "member": "Mary",
+            "disease": "Hypothyroidism",
+            "reason": "Hormone synthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "restriction:pastries",
+      "type": "restriction",
+      "properties": {
+        "food_item": "pastries",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "High sugar and refined carbs",
+        "alternative": "whole grain options",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Type 2 Diabetes Mellitus"
+        ]
+      }
+    },
+    {
+      "id": "restriction:table salt",
+      "type": "restriction",
+      "properties": {
+        "food_item": "table salt",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Primary sodium source",
+        "alternative": "potassium chloride salt substitute",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Hypertension (High Blood Pressure)"
+        ]
+      }
+    },
+    {
+      "id": "restriction:high-sodium foods",
+      "type": "restriction",
+      "properties": {
+        "food_item": "high-sodium foods",
+        "restriction_type": "avoid",
+        "severity": "critical",
+        "reason": "Blood pressure",
+        "alternative": "low-sodium alternatives",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Coronary Artery Disease"
+        ]
+      }
+    },
+    {
+      "id": "restriction:fried foods",
+      "type": "restriction",
+      "properties": {
+        "food_item": "fried foods",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "Trans fats and calories",
+        "alternative": "grilled or baked",
+        "affects_members": [
+          "John",
+          "John"
+        ],
+        "related_diseases": [
+          "Type 2 Diabetes Mellitus",
+          "Coronary Artery Disease"
+        ]
+      }
+    },
+    {
+      "id": "restriction:pickles",
+      "type": "restriction",
+      "properties": {
+        "food_item": "pickles",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "Very high sodium",
+        "alternative": "fresh cucumbers",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Hypertension (High Blood Pressure)"
+        ]
+      }
+    },
+    {
+      "id": "restriction:butter",
+      "type": "restriction",
+      "properties": {
+        "food_item": "butter",
+        "restriction_type": "avoid",
+        "severity": "high",
+        "reason": "Saturated fat",
+        "alternative": "olive oil",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Coronary Artery Disease"
+        ]
+      }
+    },
+    {
+      "id": "restriction:white rice",
+      "type": "restriction",
+      "properties": {
+        "food_item": "white rice",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High glycemic load",
+        "alternative": "brown rice or quinoa",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Type 2 Diabetes Mellitus"
+        ]
+      }
+    },
+    {
+      "id": "restriction:soy sauce",
+      "type": "restriction",
+      "properties": {
+        "food_item": "soy sauce",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High sodium",
+        "alternative": "low-sodium soy sauce",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Hypertension (High Blood Pressure)"
+        ]
+      }
+    },
+    {
+      "id": "restriction:red meat",
+      "type": "restriction",
+      "properties": {
+        "food_item": "red meat",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "High saturated fat",
+        "alternative": "fish or poultry",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Coronary Artery Disease"
+        ]
+      }
+    },
+    {
+      "id": "restriction:alcohol",
+      "type": "restriction",
+      "properties": {
+        "food_item": "alcohol",
+        "restriction_type": "limit",
+        "severity": "high",
+        "reason": "Decreases bone formation",
+        "alternative": "moderate or avoid",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Osteoporosis"
+        ]
+      }
+    },
+    {
+      "id": "restriction:phytates (excess)",
+      "type": "restriction",
+      "properties": {
+        "food_item": "phytates (excess)",
+        "restriction_type": "limit",
+        "severity": "low",
+        "reason": "Binds minerals",
+        "alternative": "soak/cook properly",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Osteoporosis"
+        ]
+      }
+    },
+    {
+      "id": "restriction:full-fat dairy",
+      "type": "restriction",
+      "properties": {
+        "food_item": "full-fat dairy",
+        "restriction_type": "limit",
+        "severity": "medium",
+        "reason": "Saturated fat content",
+        "alternative": "low-fat dairy",
+        "affects_members": [
+          "John"
+        ],
+        "related_diseases": [
+          "Type 2 Diabetes Mellitus"
+        ]
+      }
+    },
+    {
+      "id": "restriction:caffeine (excess)",
+      "type": "restriction",
+      "properties": {
+        "food_item": "caffeine (excess)",
+        "restriction_type": "limit",
+        "severity": "medium",
+        "reason": "May raise BP",
+        "alternative": "moderate intake",
+        "affects_members": [
+          "John",
+          "Mary"
+        ],
+        "related_diseases": [
+          "Osteoporosis",
+          "Hypertension (High Blood Pressure)"
+        ]
+      }
+    },
+    {
+      "id": "restriction:excessive salt",
+      "type": "restriction",
+      "properties": {
+        "food_item": "excessive salt",
+        "restriction_type": "limit",
+        "severity": "medium",
+        "reason": "Increases calcium loss",
+        "alternative": "moderate sodium",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Osteoporosis"
+        ]
+      }
+    },
+    {
+      "id": "restriction:raw cruciferous vegetables",
+      "type": "restriction",
+      "properties": {
+        "food_item": "raw cruciferous vegetables",
+        "restriction_type": "limit",
+        "severity": "medium",
+        "reason": "Goitrogens interfere with thyroid",
+        "alternative": "cooked vegetables",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Hypothyroidism"
+        ]
+      }
+    },
+    {
+      "id": "restriction:soy (large amounts)",
+      "type": "restriction",
+      "properties": {
+        "food_item": "soy (large amounts)",
+        "restriction_type": "limit",
+        "severity": "medium",
+        "reason": "May interfere with hormone absorption",
+        "alternative": "moderate intake",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Hypothyroidism"
+        ]
+      }
+    },
+    {
+      "id": "restriction:gluten",
+      "type": "restriction",
+      "properties": {
+        "food_item": "gluten",
+        "restriction_type": "caution",
+        "severity": "low",
+        "reason": "Some with Hashimoto's sensitive",
+        "alternative": "gluten-free if needed",
+        "affects_members": [
+          "Mary"
+        ],
+        "related_diseases": [
+          "Hypothyroidism"
+        ]
+      }
+    },
+    {
+      "id": "food:leafy greens",
+      "type": "food",
+      "properties": {
+        "name": "leafy greens",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:dairy products",
+      "type": "food",
+      "properties": {
+        "name": "dairy products",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:Brazil nuts",
+      "type": "food",
+      "properties": {
+        "name": "Brazil nuts",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:salmon",
+      "type": "food",
+      "properties": {
+        "name": "salmon",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:dairy",
+      "type": "food",
+      "properties": {
+        "name": "dairy",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:chia seeds",
+      "type": "food",
+      "properties": {
+        "name": "chia seeds",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:nuts",
+      "type": "food",
+      "properties": {
+        "name": "nuts",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:chickpeas",
+      "type": "food",
+      "properties": {
+        "name": "chickpeas",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:fish",
+      "type": "food",
+      "properties": {
+        "name": "fish",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:fatty fish",
+      "type": "food",
+      "properties": {
+        "name": "fatty fish",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:mackerel",
+      "type": "food",
+      "properties": {
+        "name": "mackerel",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:potatoes",
+      "type": "food",
+      "properties": {
+        "name": "potatoes",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:walnuts",
+      "type": "food",
+      "properties": {
+        "name": "walnuts",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:oats",
+      "type": "food",
+      "properties": {
+        "name": "oats",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:vegetables",
+      "type": "food",
+      "properties": {
+        "name": "vegetables",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:broccoli",
+      "type": "food",
+      "properties": {
+        "name": "broccoli",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:yogurt",
+      "type": "food",
+      "properties": {
+        "name": "yogurt",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:almonds",
+      "type": "food",
+      "properties": {
+        "name": "almonds",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:fortified foods",
+      "type": "food",
+      "properties": {
+        "name": "fortified foods",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:cinnamon",
+      "type": "food",
+      "properties": {
+        "name": "cinnamon",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:lentils",
+      "type": "food",
+      "properties": {
+        "name": "lentils",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:eggs",
+      "type": "food",
+      "properties": {
+        "name": "eggs",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:chicken",
+      "type": "food",
+      "properties": {
+        "name": "chicken",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:spinach",
+      "type": "food",
+      "properties": {
+        "name": "spinach",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:bananas",
+      "type": "food",
+      "properties": {
+        "name": "bananas",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:seaweed",
+      "type": "food",
+      "properties": {
+        "name": "seaweed",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:beans",
+      "type": "food",
+      "properties": {
+        "name": "beans",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:olive oil",
+      "type": "food",
+      "properties": {
+        "name": "olive oil",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:flaxseeds",
+      "type": "food",
+      "properties": {
+        "name": "flaxseeds",
+        "recommended": true
+      }
+    },
+    {
+      "id": "food:whole grains",
+      "type": "food",
+      "properties": {
+        "name": "whole grains",
+        "recommended": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "person:John",
+      "target": "disease:diabetes_type2",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "disease:hypertension",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "disease:coronary_artery_disease",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:pastries",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "critical"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:table salt",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "critical"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:high-sodium foods",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "critical"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:fried foods",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:fried foods",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:pickles",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:butter",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:white rice",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:soy sauce",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:red meat",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:full-fat dairy",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:John",
+      "target": "restriction:caffeine (excess)",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "disease:osteoporosis",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "disease:hypothyroidism",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:alcohol",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "high"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:phytates (excess)",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "low"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:caffeine (excess)",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:excessive salt",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:raw cruciferous vegetables",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:soy (large amounts)",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "medium"
+      }
+    },
+    {
+      "source": "person:Mary",
+      "target": "restriction:gluten",
+      "relationship": "MUST_AVOID",
+      "properties": {
+        "severity": "low"
+      }
+    },
+    {
+      "source": "person:Sarah",
+      "target": "disease:celiac",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    },
+    {
+      "source": "person:Sarah",
+      "target": "disease:ibs",
+      "relationship": "HAS_DISEASE",
+      "properties": {
+        "diagnosed": true
+      }
+    }
+  ],
+  "statistics": {
+    "total_nodes": 74,
+    "total_edges": 26,
+    "node_types": {
+      "person": 3,
+      "disease": 7,
+      "nutrient": 17,
+      "restriction": 17,
+      "food": 30
+    },
+    "relationship_types": {
+      "HAS_DISEASE": 7,
+      "MUST_AVOID": 19
+    }
+  },
+  "created_at": "2025-11-23T19:36:12.605913"
+}

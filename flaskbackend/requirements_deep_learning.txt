@@ -1,0 +1,46 @@
+# Deep Learning & Knowledge Graph Requirements
+# ============================================
+# Additional dependencies for the AI nutrition system
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# LLM Integration (already in main requirements, but listed for reference)
+openai>=1.0.0
+anthropic>=0.5.0
+
+# Numerical Computing (already in main requirements)
+numpy>=1.24.0
+
+# Optional: For GPU acceleration (CUDA 11.8)
+# nvidia-cudnn-cu11>=8.6.0
+# nvidia-cublas-cu11>=11.10.3.66
+
+# Optional: For model optimization
+# onnx>=1.14.0
+# onnxruntime>=1.15.0
+
+# Optional: For visualization
+# matplotlib>=3.7.0
+# seaborn>=0.12.0
+
+# Optional: For advanced training
+# tensorboard>=2.13.0
+# wandb>=0.15.0
+
+# Installation Commands
+# ====================
+
+# CPU-only installation:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# GPU installation (CUDA 11.8):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# GPU installation (CUDA 12.1):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Install all at once:
+# pip install -r requirements_deep_learning.txt

@@ -1,0 +1,80 @@
+# Low-Latency Serving System Dependencies
+# Install with: pip install -r requirements_serving.txt
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Async & Concurrency
+asyncio-redis==0.16.0
+aioredis==2.0.1
+aiocache==0.12.2
+
+# Caching
+redis==5.0.1
+pymemcache==4.0.0
+python-memcached==1.59
+
+# Machine Learning
+torch==2.1.1
+numpy==1.24.3
+scipy==1.11.4
+
+# Monitoring & Tracing
+prometheus-client==0.19.0
+opentelemetry-api==1.21.0
+opentelemetry-sdk==1.21.0
+opentelemetry-instrumentation-fastapi==0.42b0
+
+# System Monitoring
+psutil==5.9.6
+
+# HTTP & Networking
+httpx==0.25.2
+urllib3==2.1.0
+
+# Data Validation
+email-validator==2.1.0
+
+# CORS & Security
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Configuration
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-benchmark==4.0.0
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
+isort==5.13.2
+
+# Logging
+python-json-logger==2.0.7
+
+# Date/Time
+python-dateutil==2.8.2
+
+# Type Hints
+typing-extensions==4.9.0
+
+# Database (optional, for storing metrics)
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+
+# Message Queue (optional, for async task processing)
+celery==5.3.4
+kombu==5.3.4
+
+# Production Server
+gunicorn==21.2.0

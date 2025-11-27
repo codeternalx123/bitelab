@@ -1,0 +1,186 @@
+=== NUTRITIONAL KNOWLEDGE GRAPH ===
+
+FAMILY MEMBERS:
+
+- John (Age: 55)
+  Diseases: diabetes_type2, hypertension, coronary_artery_disease
+  Dietary Preference: non-vegetarian
+
+- Mary (Age: 52)
+  Diseases: osteoporosis, hypothyroidism
+  Dietary Preference: vegetarian
+
+- Sarah (Age: 28)
+  Diseases: celiac, ibs
+  Dietary Preference: gluten-free
+
+
+NUTRITIONAL GUIDELINES:
+
+- carbohydrates: 40-50 %
+  Priority: high
+  Required for: 1 conditions
+
+- fiber: 30-30 g
+  Priority: high
+  Required for: 3 conditions
+
+- sugar: None-20 g
+  Priority: critical
+  Required for: 1 conditions
+
+- saturated_fat: None-5 %
+  Priority: critical
+  Required for: 2 conditions
+
+- calories: None-None kcal
+  Priority: high
+  Required for: 1 conditions
+
+- sodium: None-1500 mg
+  Priority: critical
+  Required for: 2 conditions
+
+- potassium: 3500-4700 mg
+  Priority: high
+  Required for: 1 conditions
+
+- calcium: 1200-1200 mg
+  Priority: critical
+  Required for: 2 conditions
+
+- magnesium: 310-420 mg
+  Priority: medium
+  Required for: 2 conditions
+
+- cholesterol: None-200 mg
+  Priority: high
+  Required for: 1 conditions
+
+- omega3: 2-3 g
+  Priority: high
+  Required for: 1 conditions
+
+- vitamin_d: 800-2000 IU
+  Priority: critical
+  Required for: 1 conditions
+
+- vitamin_k: 90-120 mcg
+  Priority: high
+  Required for: 1 conditions
+
+- protein: 1.0-1.2 g/kg
+  Priority: medium
+  Required for: 1 conditions
+
+- iodine: 150-250 mcg
+  Priority: high
+  Required for: 1 conditions
+
+- selenium: 55-200 mcg
+  Priority: high
+  Required for: 1 conditions
+
+- zinc: 8-11 mg
+  Priority: medium
+  Required for: 1 conditions
+
+
+FOOD RESTRICTIONS:
+
+- AVOID pastries
+  Severity: critical | Reason: High sugar and refined carbs
+  Affects: John
+  Alternative: whole grain options
+
+- AVOID table salt
+  Severity: critical | Reason: Primary sodium source
+  Affects: John
+  Alternative: potassium chloride salt substitute
+
+- AVOID high-sodium foods
+  Severity: critical | Reason: Blood pressure
+  Affects: John
+  Alternative: low-sodium alternatives
+
+- AVOID fried foods
+  Severity: high | Reason: Trans fats and calories
+  Affects: John, John
+  Alternative: grilled or baked
+
+- AVOID pickles
+  Severity: high | Reason: Very high sodium
+  Affects: John
+  Alternative: fresh cucumbers
+
+- AVOID butter
+  Severity: high | Reason: Saturated fat
+  Affects: John
+  Alternative: olive oil
+
+- LIMIT white rice
+  Severity: high | Reason: High glycemic load
+  Affects: John
+  Alternative: brown rice or quinoa
+
+- LIMIT soy sauce
+  Severity: high | Reason: High sodium
+  Affects: John
+  Alternative: low-sodium soy sauce
+
+- LIMIT red meat
+  Severity: high | Reason: High saturated fat
+  Affects: John
+  Alternative: fish or poultry
+
+- LIMIT alcohol
+  Severity: high | Reason: Decreases bone formation
+  Affects: Mary
+  Alternative: moderate or avoid
+
+- LIMIT phytates (excess)
+  Severity: low | Reason: Binds minerals
+  Affects: Mary
+  Alternative: soak/cook properly
+
+- LIMIT full-fat dairy
+  Severity: medium | Reason: Saturated fat content
+  Affects: John
+  Alternative: low-fat dairy
+
+- LIMIT caffeine (excess)
+  Severity: medium | Reason: May raise BP
+  Affects: John, Mary
+  Alternative: moderate intake
+
+- LIMIT excessive salt
+  Severity: medium | Reason: Increases calcium loss
+  Affects: Mary
+  Alternative: moderate sodium
+
+- LIMIT raw cruciferous vegetables
+  Severity: medium | Reason: Goitrogens interfere with thyroid
+  Affects: Mary
+  Alternative: cooked vegetables
+
+- LIMIT soy (large amounts)
+  Severity: medium | Reason: May interfere with hormone absorption
+  Affects: Mary
+  Alternative: moderate intake
+
+- CAUTION gluten
+  Severity: low | Reason: Some with Hashimoto's sensitive
+  Affects: Mary
+  Alternative: gluten-free if needed
+
+
+RECOMMENDED FOODS:
+
+leafy greens, dairy products, Brazil nuts, salmon, dairy, chia seeds, nuts, chickpeas, fish, fatty fish, mackerel, potatoes, walnuts, oats, vegetables, broccoli, yogurt, almonds, fortified foods, cinnamon, lentils, eggs, chicken, spinach, bananas, seaweed, beans, olive oil, flaxseeds, whole grains
+
+
+GRAPH STATISTICS:
+- Total Nodes: 74
+- Total Relationships: 26
+- Node Types: {'person': 3, 'disease': 7, 'nutrient': 17, 'restriction': 17, 'food': 30}
+- Relationship Types: {'HAS_DISEASE': 7, 'MUST_AVOID': 19}
