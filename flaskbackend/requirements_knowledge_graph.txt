@@ -1,0 +1,334 @@
+# Food Knowledge Graph AI System - Requirements File
+# ===================================================
+# 
+# Comprehensive dependency list for the Food Knowledge Graph system
+# with 20,000+ lines of code supporting millions of foods.
+#
+# Installation: pip install -r requirements_knowledge_graph.txt
+#
+# Author: Wellomex AI Nutrition Team
+# Version: 1.0.0
+
+# ===========================
+# Core Web Framework
+# ===========================
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# ===========================
+# Database Drivers
+# ===========================
+# Neo4j Graph Database
+neo4j>=5.14.0
+py2neo>=2021.2.4
+
+# Redis Caching
+redis>=5.0.0
+aioredis>=2.0.1
+
+# Traditional Databases (for integration)
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+asyncpg>=0.29.0
+alembic>=1.12.0
+
+# ===========================
+# Machine Learning Stack
+# ===========================
+# PyTorch Ecosystem
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Transformers and NLP
+transformers>=4.35.0
+sentence-transformers>=2.2.2
+tokenizers>=0.15.0
+datasets>=2.15.0
+
+# Scikit-learn and Traditional ML
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.1.0
+
+# Vector Search and Similarity
+faiss-cpu>=1.7.4
+annoy>=1.17.3
+
+# ===========================
+# Data Processing
+# ===========================
+# Core Data Libraries
+pandas>=2.1.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Network Analysis
+networkx>=3.2.0
+python-louvain>=0.16
+
+# Image Processing (for food images)
+Pillow>=10.1.0
+opencv-python>=4.8.0
+
+# ===========================
+# HTTP and API Integration
+# ===========================
+# Async HTTP Client
+aiohttp>=3.9.0
+httpx>=0.25.0
+aiofiles>=23.2.0
+
+# Request Handling
+requests>=2.31.0
+urllib3>=2.1.0
+
+# ===========================
+# Data Validation and Serialization
+# ===========================
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+marshmallow>=3.20.0
+cerberus>=1.3.5
+
+# ===========================
+# Configuration and Environment
+# ===========================
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+toml>=0.10.2
+configargparse>=1.7
+
+# ===========================
+# Logging and Monitoring
+# ===========================
+structlog>=23.2.0
+loguru>=0.7.2
+prometheus-client>=0.19.0
+sentry-sdk[fastapi]>=1.38.0
+
+# ===========================
+# Task Queue and Background Jobs
+# ===========================
+celery>=5.3.0
+redis>=5.0.0  # For Celery broker
+dramatiq>=1.14.0
+rq>=1.15.0
+
+# ===========================
+# Testing Framework
+# ===========================
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+httpx>=0.25.0  # For testing FastAPI
+factory-boy>=3.3.0
+
+# ===========================
+# Development Tools
+# ===========================
+# Code Quality
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+mypy>=1.7.0
+pylint>=3.0.0
+
+# Security
+bandit>=1.7.5
+safety>=2.3.0
+
+# Documentation
+sphinx>=7.2.0
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# ===========================
+# Geographic and Country Data
+# ===========================
+pycountry>=22.3.13
+geopy>=2.4.0
+timezonefinder>=6.2.0
+
+# ===========================
+# Cryptography and Security
+# ===========================
+cryptography>=41.0.0
+bcrypt>=4.1.0
+pyotp>=2.9.0
+
+# ===========================
+# Utilities and Helpers
+# ===========================
+# Date and Time
+python-dateutil>=2.8.2
+pytz>=2023.3.post1
+
+# String Processing  
+fuzzywuzzy>=0.18.0
+python-levenshtein>=0.23.0
+
+# Progress Bars
+tqdm>=4.66.0
+
+# Caching
+cachetools>=5.3.0
+diskcache>=5.6.3
+
+# Email and Notifications
+emails>=0.6.0
+
+# File Processing
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+python-magic>=0.4.27
+
+# ===========================
+# Natural Language Processing
+# ===========================
+nltk>=3.8.0
+spacy>=3.7.0
+textblob>=0.17.1
+langdetect>=1.0.9
+
+# ===========================
+# API Documentation
+# ===========================
+fastapi-users>=12.1.0
+fastapi-limiter>=0.1.6
+slowapi>=0.1.9
+
+# ===========================
+# Performance and Optimization
+# ===========================
+# Memory Profiling
+memory-profiler>=0.61.0
+psutil>=5.9.0
+
+# Code Acceleration
+numba>=0.58.0
+cython>=3.0.0
+
+# ===========================
+# Data Visualization (Optional)
+# ===========================
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.17.0
+bokeh>=3.3.0
+
+# ===========================
+# Food-Specific Libraries
+# ===========================
+# Nutrition Databases
+food-data-central>=0.1.0  # Custom wrapper if available
+usda-ndb-client>=1.0.0     # USDA client
+
+# Barcode Processing (for food products)
+python-barcode>=0.15.0
+qrcode>=7.4.0
+
+# ===========================
+# Cloud and Deployment
+# ===========================
+# AWS Integration
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Azure Integration  
+azure-storage-blob>=12.19.0
+azure-keyvault-secrets>=4.7.0
+
+# Google Cloud
+google-cloud-storage>=2.10.0
+
+# Docker and Containers
+docker>=6.1.0
+
+# ===========================
+# Middleware and Extensions
+# ===========================
+# CORS and Security
+fastapi-cors>=0.0.6
+python-cors>=1.7.0
+
+# Rate Limiting
+slowapi>=0.1.9
+limits>=3.7.0
+
+# ===========================
+# Version Compatibility Notes
+# ===========================
+#
+# Python Version: 3.9+ required
+# - Some ML libraries require newer Python versions
+# - Async features require Python 3.7+
+# - Type hints work best with Python 3.9+
+#
+# Operating System Compatibility:
+# - Windows: Full support with Visual C++ Build Tools
+# - Linux: Full support (Ubuntu 20.04+, CentOS 8+)
+# - macOS: Full support (10.15+, both Intel and Apple Silicon)
+#
+# Hardware Requirements:
+# - RAM: 8GB minimum, 16GB recommended
+# - CPU: Multi-core recommended for ML operations
+# - GPU: Optional but recommended for large ML models
+# - Storage: 10GB minimum for models and cache
+#
+# ===========================
+# Installation Commands
+# ===========================
+#
+# Standard Installation:
+# pip install -r requirements_knowledge_graph.txt
+#
+# Development Installation (includes dev tools):
+# pip install -r requirements_knowledge_graph.txt
+#
+# Production Installation (minimal):
+# pip install --no-dev -r requirements_knowledge_graph.txt
+#
+# GPU Support (if available):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#
+# ===========================
+# Environment Setup
+# ===========================
+#
+# Virtual Environment:
+# python -m venv food_kg_env
+# source food_kg_env/bin/activate  # Linux/macOS
+# food_kg_env\Scripts\activate     # Windows
+# pip install -r requirements_knowledge_graph.txt
+#
+# Conda Environment:
+# conda create -n food_kg python=3.9
+# conda activate food_kg
+# pip install -r requirements_knowledge_graph.txt
+#
+# ===========================
+# Known Issues and Solutions
+# ===========================
+#
+# 1. Windows C++ Compiler Issues:
+#    Install Microsoft C++ Build Tools
+#    OR use pre-compiled wheels: --find-links https://download.pytorch.org/whl/torch_stable.html
+#
+# 2. Memory Issues with Large Models:
+#    Set environment variable: TRANSFORMERS_CACHE=/path/to/large/disk
+#    Reduce batch sizes in configuration
+#
+# 3. Neo4j Connection Issues:
+#    Ensure Neo4j server is running
+#    Check firewall settings for ports 7474 and 7687
+#
+# 4. Redis Connection Issues:
+#    Install Redis server: https://redis.io/download
+#    Check default port 6379 availability
+#
+# ===========================
